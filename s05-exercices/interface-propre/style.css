@@ -13,69 +13,97 @@
       gauche : pas de text-align: center sur body, main, p, les titres (h1 à h6), section, article
       et li. Dans un bouton, text-align: center est permis.
    Puis : node --test interface-propre.test.js, et une capture « après ». */
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+ 
+:root {
+  /*1.Palette limitee a trois couleurs +  une discrete*/
+  --couleur-texte : #1f2a37;
+  --couleur-fond : #fbfaf7;
+  --couleur-accent :#0b6e4f;
+  --couleur-discrete : #d9d4c7;
+
+  /*2. Échelle d'espacements*/
+  --espace-1 : 0.25rem;
+  --espace-2 : 0.5rem;
+  --espace-3 : 1rem;
+  --espace-4 : 1.5rem;
+  --espace-5 : 2.5rem;
+
+  /*3. Echelle typographique*/
+  --texte-petit:0.875rem;
+  --texte-normal:1rem;
+  --texte-grand:1.25rem;
+  --texte-titre:2rem;
+}
 
 body {
-  font-family: Georgia, serif;
-  font-size: 15px;
-  line-height: 1.1;
-  color: #333333;
-  background: #fafafa;
-  text-align: center;
-  margin: 7px;
+  max-width: 65ch;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--texte-normal);
+  line-height: 1.6;
+  color: var(--couleur-texte);
+  background: var(--couleur-fond);
+  margin: 0 auto;
+  padding: var(--espace-5) var(--espace-3);
 }
 
 h1 {
-  font-size: 23px;
-  color: #c0392b;
-  margin: 31px 0 3px;
+  font-size: var(--texte-titre);
+  margin: 0 0 var(--espace-3);
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 26px;
-  color: #2980b9;
-  margin-top: 45px;
+  font-size: var(--texte-grand);
+  margin: var(--espace-5) 0 var(--espace-3);
 }
 
 h3 {
-  font-size: 19px;
-  color: #8e44ad;
-  margin: 13px;
+  font-size: var(--texte-normal);
+  margin: 0 0 var(--espace-2);
 }
 
 .chapo {
-  font-size: 17px;
-  color: #7f8c8d;
-  padding: 0 22px;
+  font-size: var(--texte-grand);
+  margin: 0 0 var(--espace-4);
 }
 
 .bouton {
   display: inline-block;
-  padding: 9px 13px;
-  background: #27ae60;
-  color: white;
+  padding: var(--espace-2) var(--espace-4);
+  font-weight: bold;
+  background: var(--couleur-accent);
+  color: var(--couleur-fond);
   text-decoration: none;
 }
 
 .cartes {
   display: grid;
-  gap: 11px;
+  gap: var(--espace-3);
 }
 
 .carte {
-  padding: 18px 7px 3px;
-  background: #f1c40f;
-  border: 1px solid #e67e22;
+  padding: var(--espace-3);
+  border: 1px solid var(--couleur-discrete);
+}
+
+.carte p{
+  margin: 0;
 }
 
 .infos {
-  font-size: 12px;
-  color: #d35400;
-  background: #ecf0f1;
-  margin-bottom: 27px;
+  font-size: var(--texte-petit);
+  font-weight: bold;
+  margin-top: var(--espace-2);
 }
 
 footer {
-  margin-top: 50px;
-  font-size: 11px;
-  color: #95a5a6;
+  margin-top: var(--espace-5);
+  padding: var(--espace-3);
+  border-top: 1px solid var(--couleur-discrete) ;
+  font-size: var(--texte-petit);
 }
