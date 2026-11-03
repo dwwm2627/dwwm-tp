@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Exercices CSS du mardi. Ouvrez index.html avec Live Preview et gardez l'aperçu à côté.
    Vérifiez avec : node --test css-exercices.test.js (dans le dossier des exercices). */
 
@@ -43,6 +47,11 @@ nav a {
    a) Faites en sorte que la largeur d'un élément inclue sa marge intérieure et sa bordure :
       box-sizing sur tous les éléments.
    b) Les cartes (.carte) : marge intérieure 1rem, bordure de 2px pleine, marge extérieure basse 1.5rem. */
+   .carte{
+      padding: 1rem;
+      border: 2px solid ;
+      margin:1.5rem;
+   }
 
 
 /* Exercice 4 — Unités
