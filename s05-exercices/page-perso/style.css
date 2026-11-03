@@ -1,3 +1,24 @@
 /* Page personnelle — styles.
    Mardi : typographie, couleurs, espacements (« CSS from scratch »).
    Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
+h1{
+   color : #0ee823;
+   font-size: 2 rem;
+}
+
+h2{
+   color : #0ee823;
+}
+/*un point c est un class*/
+.important{
+   color:pink;
+}
+
+/*un hastag c est un id*/
+#toto{
+   color:red;
+}
+
+nav a{
+   text-decoration: none;
+}

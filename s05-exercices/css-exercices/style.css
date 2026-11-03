@@ -6,15 +6,37 @@
    b) Le paragraphe de classe « important » en gras (sélecteur de classe).
    c) Le paragraphe d'identifiant « intro » en italique (sélecteur d'identifiant).
    d) Les liens situés dans nav sans soulignement (sélecteur descendant). */
+h1{
+   color: #1f2a5a;
+}
+
+.important {
+   font-weight: bold;
+}
+
+#intro{
+   font-style: italic;
+}
+
+nav a {
+   text-decoration: none;
+}
 
 
 /* Exercice 2 — Cascade et spécificité
    La règle « button » ci-dessous donne un fond gris à tous les boutons.
    Écrivez APRÈS elle une règle qui donne au bouton de classe « bouton » un fond #b3122e
    et un texte blanc. Puis déplacez votre règle AVANT la règle « button » : que se passe-t-il ? Pourquoi ? */
-button {
+.bouton{
+   background: #b3122e;
+   color: white;
+}
+
+   button {
   background: lightgray;
 }
+
+
 
 
 /* Exercice 3 — Box model
