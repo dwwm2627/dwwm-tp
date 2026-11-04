@@ -3,11 +3,12 @@
    Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
 h1{
    color : #0ee823;
-   font-size: 2 rem;
+   font-size: 16px;
 }
 
 h2{
-   color : #0ee823;
+    color : #0ee823;
+   font-size: 1rem;
 }
 /*un point c est un class*/
 .important{

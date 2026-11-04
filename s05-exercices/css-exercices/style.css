@@ -58,3 +58,13 @@ nav a {
 /* Exercice 4 — Unités
    a) Le texte de base (body) à 1rem.
    b) Le conteneur principal (.conteneur) : 90 % de largeur, 60rem au maximum, centré (marges auto). */
+body{
+   font-size: 1rem;
+}
+
+.conteneur{
+   width: 90%;
+   max-width: 60rem;
+   margin: 0 auto;
+   background-color: aqua;
+}
