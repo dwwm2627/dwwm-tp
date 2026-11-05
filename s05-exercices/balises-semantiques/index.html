@@ -1,0 +1,58 @@
+<!--DEMONSTRATION 2 : etape 2 -->
+<!--Les balises sematiques-->
+<!--Le cours de lundi apres-midi S05, 'aside' n'etait pas le cours-->
+<!--Objectif : donner un role a chaque zone et le verifier dans l arbre d accessibilite-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La gazette du quartier</title>
+</head>
+
+<body> <!--Contenu visible-->
+
+<!--L'EN-TETE ET LE MENU AVEC DE VRAIES BALISES-->    
+    <header> <!--L'en-tete de la page : ce qui se repete en haut. Role : le menu, banner... -->
+        <h1>La gazette du quartier</h1> <!--Le seul element qui a un sens ici : un titre -->
+        <nav><!--Un groupe de liens de navigation. role : navigation...-->
+            <a href="#actus">Actualites</a><!--Conduit a l'element qui a l ID actus-->
+            <a href="#infos">Infos Pratiques</a><!--Conduit a l'element qui a l ID infos-->
+        </nav><!--Fin du menu-->
+    </header><!--Fin de de l'en-tete-->
+    
+    
+  <!--LE CONTENU PRINCIPAL AVEC DE VRAIES BALISES-->   
+    <main><!--Le contenu propre a cette page : un seul par page. role : main-->
+        <section id="actus"><!--Une partie sur un sujet, avec son titre-->
+            <h2>Actualites</h2><!--Titre de la partie : on ne saute pas de niveau apres h1-->
+            <article><!--Un texte qui a du sens seul, meme sorti de la page. Role : article-->
+                <h3>Le marche change de place</h3><!--Titre qui se met sous le h2-->
+                <p>Des samedi, il se tient sur la place de la gare</p><!--Le text de l'article-->
+            </article><!--Fin de l'article-->
+            <article><!--Un texte qui a du sens seul, meme sorti de la page. Role : article-->
+                <h3>Mon deuxieme article</h3><!--Titre qui se met sous le h2-->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p><!--Le text de l'article-->
+            </article><!--Fin de l'article-->
+        </section><!--Fin de la partie-->
+
+
+
+        <aside id="infos"><!--Une information a cote du sujet : complementary-->
+            <h2>Infos pratiques</h2><!--Titre de l'encadre-->
+            <p>La mairie ouvre de 9h a 17h</p><!--Le texte de l'encadre-->
+        </aside><!--Fin de l'encadre-->
+    </main><!--Fin du contenu principal-->
+
+    <footer><!--Le pied de page. Role : content info-->
+        <p>Gazette fictive, ecrite pour la formation</p><!--texte du pied de page-->
+    </footer><!--Fin du pied de page-->
+
+</body><!--Fin du contenu-->
+</html><!--Fin du document-->
+
+<!-- Devez ajouter une deuxieme article dans la section
+ -un h3
+ -texte
+ -verifier l arbre d accessibilite
+ -->

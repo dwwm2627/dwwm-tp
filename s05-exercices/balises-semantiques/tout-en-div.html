@@ -1,0 +1,45 @@
+<!--DEMONSTRATION 2 : etape 1-->
+<!--La meme page tout en div-->
+<!--Cette page sert de comparaison avec index.html-->
+<!--Rien ici ne dit le role des zones : les classes ou les ID sont invisibles pour les lecteur d'ecran-->
+
+<!DOCTYPE html> <!--Mode standard-->
+<html lang="fr"> <!--Page en francais-->
+
+<head> <!--Information de la page-->
+    <meta charset="UTF-8"> <!--Encodage-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Largeur de l'ecran-->
+    <title>La gazette du quartier</title> <!--Titre de l'onglet-->
+</head> <!--Fin des information-->
+
+<body> <!--Contenu visible-->
+    <div class="haut"> <!--une boite sans aucun sens : "haut" n'est lu que par nous le developpeur -->
+        <h1>La gazette du quartier</h1> <!--Le seul element qui a un sens ici : un titre -->
+        <div class="menu"><!--Un attribut se met uniquement dans l balise ouvrante--><!--Encore une fois une boite : rien n'annonce que c est un menu-->
+            <a href="#actus">Actualites</a><!--Un lien vers la partie actus-->
+            <a href="#info">Infos Pratiques</a><!--Un lien vers la partie infos-->
+        </div><!--Une balise fermante ne sert qu a fermer le bloc--><!--Fin du menu-->
+    </div><!--Fin du haut-->
+    
+    
+    
+    <div class="contenu"><!--Rien n'indique le contenu principal-->
+        <div id="actus"><!--Une partie, sans le dire-->
+            <h2>Actualites</h2><!--Titre de la partie-->
+            <div class="article"><!--Un texte autonome, sans le dire-->
+                <h3>Le marche change de place</h3><!--Titre de l'article-->
+                <p>Des samedi, il se tient sur la place de la gare</p><!--Le text de l'article-->
+            </div><!--Fin de l'article-->
+        </div><!--Fin de la partie-->
+
+        <div class="cote" id="infos"><!--Un encadre a cote du sujet, sans le dire-->
+            <h2>Infos pratiques</h2><!--Titre de l'encadre-->
+            <p>La mairie ouvre de 9h a 17h</p><!--Le texte de l'encadre-->
+        </div><!--Fin de l'emcadre-->
+    </div><!--Fin du contenu-->
+
+    <div class="bas"><!--Rien n'annonce que c'est le pied de page-->
+        <p>Gazette fictive, ecrite pour la formation</p><!--texte du pied de page-->
+    </div><!--Fin du bas-->
+</body><!--Fin du contenu-->
+</html><!--Fin du document-->

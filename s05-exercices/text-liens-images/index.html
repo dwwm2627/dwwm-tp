@@ -1,0 +1,46 @@
+<!--DEMONSTRATION 3 : TEXTE, LIENS, IMAGES-->
+<!--COURS DE LUNDI APRES-MIDI DE S05-->
+<!--OBJECTIF : TITRE DANS L'ORDRE, TROIS SORTES DE LIENS, UNE INAGE ET SON ALT-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheques des Tilleuls</title>
+</head>
+
+<body>
+    <!--ETAPE 1 : DES TITRES, SANS SAUTER DE NIVEAU-->
+    <main>
+        <h1>Bibliotheques des Tilleuls</h1> <!--le sujet principale de la page, un seul h1 par page-->
+        <h2>Nos services</h2> <!--une partie : niveau 2 en terme hierarchie et juste apres le h1-->
+        <!--on peut jusqu a h6 sans sauter d etape-->
+        <!--d une maniere generale on va rarement apres h3 / h4-->
+
+    <!--ETAPE 2 : LES LISTES-->
+    <ul><!--une liste sans ordre : les elements n'ont pas de rang-->
+        <li>Pret de livres</li><!--un element de la liste-->
+        <li>Salle de lecture</li><!--chaque element a son propre li-->
+    </ul><!--fin de la liste-->
+
+    <h2>S'inscrire</h2><!--une partie du meme niveau-->
+    <ol><!--une liste dans l'ordre : ici l'ordre compte-->
+        <li>Venez avec une piece d'identite</li><!--numerote 1 par le navigateur, premier element-->
+        <li>Remplissez la fiche</li><!--numerote 2 automatiquement-->
+    </ol><!--fin de la liste-->
+
+    <!--ETAPE 3 : LES 3 SORTES DE LIENS-->
+   <p><a href="pages/horaires.html">Voir les horaires</a></p><!--Relatif : a partir du dossier de ce fichier-->
+   <p><a href="https://developer.mozilla.org/fr/">Documentation MDN</a></p><!--Absolu : l'adresse complete pour un autre site-->
+    <p><a href="#contact">Nous contacter</a></p><!--Vers un ID de cette meme page : # puis l'id-->
+
+
+    <!--ETAPE 4 : L'IMAGE ET LA CIBLE DU LIEN #CONTACT-->
+    <img src="img/livre.svg" alt="Livre ouvert" width="240" height="160"><!--Le chemin part de ce fichier; widht et height reservent la place-->
+    <h2 id="contact">Contact</h2><!--la cible du lien : id unique dans la page-->
+    <p>Sur place, du mardi au samedi</p>
+    </main>
+    
+</body>
+</html>

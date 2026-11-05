@@ -1,0 +1,25 @@
+<!--
+  DÉMONSTRATION 03, ÉTAPE 5 : ce fichier est dans pages/, un dossier sous index.html.
+  Question de prédiction : pour afficher img/livre.svg d'ici, img/livre.svg suffit-il ?
+  Réponse : non, ce chemin chercherait pages/img/livre.svg. Il faut d'abord remonter.
+-->
+<!DOCTYPE html> <!-- Mode standard. -->
+<html lang="fr"> <!-- Page en français. -->
+<head> <!-- Informations sur la page. -->
+  <meta charset="utf-8"> <!-- Encodage. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Largeur de l'écran. -->
+  <title>Horaires, Bibliothèque des Tilleuls</title> <!-- Titre de l'onglet. -->
+</head> <!-- Fin des informations. -->
+<body> <!-- Contenu visible. -->
+  <main> <!-- Le contenu principal. -->
+    <h1>Horaires</h1> <!-- Le h1 de cette page : chaque page a le sien. -->
+    <img src="../img/livre.svg" alt="Un livre ouvert" width="240" height="160"> <!-- ../ remonte dans le dossier parent, puis descend dans img. -->
+    <p>Du mardi au samedi, de 10 h à 18 h.</p> <!-- Le contenu de la page. -->
+    <p><a href="../index.html">Retour à l'accueil</a></p> <!-- Même logique pour un lien : on remonte d'abord. -->
+  </main> <!-- Fin du contenu principal. -->
+  <!--
+    Vous devez voir (étape 5) : le livre, et un lien qui ramène à l'accueil.
+    Sans ../ : l'image cassée, et une ligne rouge dans la Console.
+  -->
+</body> <!-- Fin du contenu. -->
+</html> <!-- Fin du document. -->
