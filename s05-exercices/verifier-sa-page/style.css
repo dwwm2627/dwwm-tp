@@ -1,0 +1,11 @@
+/*DEMOSTRATION 5 : UNE SEULE REGLE POUR VOIR SI LE FICHIER EST BIEN RELIE*/
+
+/*:root vise la racine : les variables y sont lisibles de partout*/
+:root{
+    --couleur-accent : #b3401e; /*la couleur rangee une fois pour toute*/
+}
+
+/*Vise tous les titres h1*/
+h1{
+    color: var(--couleur-accent);/*Titre en couleur : si le fichier charge, ca se voit*/
+}

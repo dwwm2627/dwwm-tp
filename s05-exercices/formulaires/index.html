@@ -1,0 +1,42 @@
+<!--DEMONSTRATION 4 : LES FORMULAIRES-->
+<!--COURS DE LUNDI APRES-MIDI SEMAINE S05-->
+<!--OBJECTIF : RELIER CHAQUE LABEL A SON CHAMP, CHOISIR LE BON TYPE, EXIGER UN CHAMP, ENVOYER-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier de poterie : inscription</title>
+</head>
+<body>
+    <main>
+        <h1>S'inscrire a l'atelier</h1>
+
+        <form><!--Regroupe les champs a envoyer ensemble-->
+            <p><!--un paragraphe par champ, pour les mettre l'un sous l'autre-->
+            <label for="nom">Votre nom</label><!--for vaut l"id du champ : c'est ce qui les relie-->  
+            <input type="text" name="nom" id="nom" required><!--id pour le lier avec le label, name pour l'emvoi, required pour obligatoire-->  
+            </p> 
+
+            <p><!--le champ adresse mail-->
+            <label for="courriel">Votre email</label><!--toujours un label par champ-->  
+            <input type="email" name="courriel" id="courriel" required><!--email : le navigateur refuse un texte sans @-->  
+            </p> 
+
+            <p><!--le champ nombre de place-->
+            <label for="places">Nombre de places</label><!--toujours un label par champ-->  
+            <input type="number" name="places" id="places" min="1" max="4"><!--Number ; chiffres, min et max bornent la valeur-->  
+            </p>
+
+            <p><!--le champ message-->
+            <label for="message">Une remarque</label><!--toujours un label par champ-->  
+            <textarea name="message" id="message" rows="3"></textarea><!--textarea : plusieurs lignes de texte-->  
+            </p>
+
+            <button type="submit">S'inscrire</button><!--Submit : ce bouton envoie le formulaire-->
+        </form>
+
+    </main>
+    
+</body>
+</html>

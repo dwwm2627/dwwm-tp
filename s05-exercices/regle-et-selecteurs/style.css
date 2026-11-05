@@ -1,0 +1,57 @@
+/*UNE REGLE : UN SELECTEUR (QUI?), PUIS DES DECLARATION DE PROPRIETE:VALEUR; (QUOI?)*/
+/*lES VARIABLES DE :ROOT SONT lUES PARTOUT*/
+
+:root{
+    --couleur-titre:#1f2a37;
+    --couleur-accent:#b3401e;
+    --couleur-surface:#f4efe4;
+}
+
+/*SELECTEUR DE BALISE*/
+/*balise : vise tous les p de la page*/
+p{
+    font-size: 1.25rem;
+}
+/*vous devez voir les 4 paragraphes plus grands, le titre et le bouton inchanges*/
+
+/*SELECTEUR DE CLASSE*/
+/*classe : un point, puis un nom, vise tout les elements qui porte cette classe*/
+.important{
+    font-weight: bold;
+}
+/*vous devez voir seulement les deux paragraphes qui ont la class="important" passer en gras*/
+
+/*SELECTEUR D'ID*/
+/*ID : un diese, puis un nom, vise un seul element*/
+#a-propos{
+    background-color: var(--couleur-surface);
+}
+/*vous devez voir un seul paragraphe sur fond beige*/
+
+/*LE DESCENDANT*/
+/*Descendant : un espace. les a situes dans nav et eux seulement*/
+nav a{
+    text-decoration: none;
+}
+/*vous devez voir le lien du menu sans souligenement, celui du paragraphe est garde*/
+
+/*LE GROUPE*/
+/*Groupe : une virgule. la meme regle pour les deux*/
+h1, button{
+    color:var(--couleur-titre);
+    background-color: var(--couleur-surface);
+}
+/*vous devez voir le titre et le bouton sur le meme fond clair*/
+
+/*LES ETATS, QUI DEPEND DE CE QUE FAIT LE VISITEUR*/
+/*Pseudo-classe : le lien pendant que la sourie le survole*/
+a:hover{
+    color:var(--couleur-accent);
+}
+/*vous devez voir un changement de couleur au survol de la souris sur les liens*/
+
+/*L'element atteint au clavier avec la touche tab*/
+:focus-visible{
+    outline: 0.2rem solid var(--couleur-accent);/*le repere de qui navigue au clavier*/
+}
+/*vous devez voir lors de l utilisation de tab dessine un contour element apres element*/

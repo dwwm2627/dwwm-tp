@@ -1,0 +1,28 @@
+<!--DEMONSTRATION 6 : RELIER LE CSS, LA REGLE ET LES SELECTEURS-->
+<!--ON A VU CA MARDI MATIN DE LA SEMAINE S05-->
+<!--OBJECTIF : ECRIRE UNE REGLE ET VISER JUSTE AVEC CHAQUE SELECTEUR-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecteurs</title>
+    <link rel="stylesheet" href="style.css"><!--on relie la feuille de style a la page-->
+</head>
+
+<body>
+    <nav>
+        <a href="#a-propos">A propos</a><!--un lien dans le menu-->
+    </nav>
+    <main>
+        <h1>Le jardin partage</h1>
+        <p id="a-propos">Ouvert a tous les habitants</p><!--Un paragraphe avec un id unique dans la page-->
+        <p class="important">Reunion samedi a 10h</p><!--une classe : reutilisable-->
+        <p class="important">Apportez vos outils</p><!--La meme classe sur un autre element-->
+        <p>Un <a href="#a-propos">lien dans le texte</a>, hors du menu</p><!--Un lien hirs du menu, pour comparer-->
+
+        <button type="button">Un button</button><!--un bouton, pour utiliser :focus-visible-->
+    </main>  
+</body>
+</html>
