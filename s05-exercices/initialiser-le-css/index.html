@@ -1,0 +1,31 @@
+<!--DEMONSTRATION 9 POURQUOI INITIALISER LE CSS-->
+<!--ON A DEJA PARLE DE BOX-SIZING LE MARDI DE LA SEMAINE SO5 ET LE RESTE EST NOUVEAU-->
+<!--OBJECTIF : VOIR CE QUE FAIT LE NAVIGATEUR PAR DEFAUT ET DECIDER QUOI CHANGER-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initialiser le CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Avant, Apres</h1><!--Un titre : il a des marges defaut-->
+        <ul><!--Une liste : elle a un retrait par defaut -->
+            <li>Une puce</li><!--Un element-->
+        </ul>
+        <div class="cadre">
+            <img src="img/livre.svg" alt="Un livre ouvert" width="240" height="160">
+        </div><!--Le cadre colore revele l espace sous l'image-->
+        <p><!--Un champ et un bouton : ils ont leur propre police-->
+            <label for="nom">Votre nom</label><!--Une etiquette dans la police de la page-->
+            <input type="text" id="nom"><!--Un champ dans une autre police par defaut-->
+        </p>
+        <button type="submit">Envoyer</button><!--Un bouton : meme remarque-->
+    </main>
+    
+</body>
+</html>

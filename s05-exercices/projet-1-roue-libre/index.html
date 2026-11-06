@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roue libre, atelier de reparation de velos</title>
+    <!--Description : le resume que les moteurs de recherche peuvent afficher sous le titre-->
+    <meta name="description" content="Roue libre repare tous les velos en 48 heures. Atelier fictif, cree pour la formation">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p class="logo">Roue libre</p>
+        <nav>
+            <a href="#services">services</a>
+            <a href="#temoignage">avis</a>
+            <a href="#formules">formules</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="accroche">
+            <h1>Votre velo repart comme neuf, en 48 heures</h1>
+            <!--que pour sauter une ligne et creer un espace n utilisz jamais la balise <br> pour creer de l'espace, c est le role du CSS-->
+            <p>Roue libre repare tous les velos, du plus ancien au plus recent. Vous deposez, nous reparons, vous repartez</p>
+            <a class="bouton" href="#formules">Voir les formules</a>
+            <img src="img/velo.svg" alt="dessin d'un velo de profil, pose sur une colline" width="960" height="400">
+        </section>
+        <section id="services">
+            <h2>Nos services</h2>
+            <article class="carte">
+                <h3>Reparation</h3>
+                <p>Crevaison, freins, derailleur : nous reparons et nous expliquons ce qui a lache</p>
+            </article>
+            <article class="carte">
+                <h3>Reglage</h3>
+                <p>Hauteur de selle, position du guidon : un velo regle pour vous fatiguez moins</p>
+            </article>
+            <article class="carte">
+                <h3>Atelier partage</h3>
+                <p>Chaque samedi, venez reparer vous-meme votre velo, avec nos outils et nos conseils</p>
+            </article>
+        </section>
+        <section id="temoignage">
+            <h2>Ce qu'en disent nos clients</h2>
+            <!-- la balise figure : un contenu accompagne de sa legende -->
+             <figure class="temoignage">
+                <!-- la balise blockquote : une citation. Elle contient ici un paragraphe -->
+                 <blockquote>
+                    <p>Mon velo dormait dans la cave depuis six ans. Deux jours plus tard, je l'emmenais au travail</p>
+                 </blockquote>
+                 <!-- la balise figcaption : la legende de la figue, ici la personne qui donne son avis -->
+                  <figcaption>Camille, Cliente de l'atelier</figcaption>
+             </figure>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Roue libre est un atelier fictif, cree pour la formation</p>
+    </footer>
+</body>
+</html>

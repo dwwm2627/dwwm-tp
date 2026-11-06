@@ -1,0 +1,52 @@
+/*DEMONSTRATION 7 : CASCADE ET HERITAGE*/
+/*MARDI MATIN DE LA SEMAINE S05*/
+/*OBJECTIF : SAVOIR QUELLE REGLE GAGNE ET CE QUI SE TRANSMET AUX ENFANTS*/
+
+/*Les couleurs pour distinguer qui gagne*/
+:root{
+ --couleur-id:#b3401e;
+ --couleur-classe:#0b6e4f;
+ --couleur-balise:#1d4e89;
+ --couleur-derniere:#6aec91;
+ --espace-boite:2rem;
+}
+
+/*trois regles sur le meme element*/
+/*Tapez-les dans cet ordre, la balise en dernier*/
+/*ID le plus precis des trois, prioritaire*/
+#message{
+    color:var(--couleur-id);
+}
+
+/*Classe moins precis qu un id, mais plus qu une balise*/
+.note{
+    color:var(--couleur-classe);
+}
+
+/*Balise la moins precise de toute, meme si elle est ecrite en dernier*/
+p{
+    color:var(--couleur-balise);
+}
+/*Bleu gagne seulement sur les p sans regle*/
+/*Vous devez voir le premier paragraphe en brique. Le plus precis gagne, quel que soit l'ordre. Les autres paragraphes sont bleus, car seule le selecteur p les vise */
+
+/*Deux regles aussi precise l'une que l'autre*/
+/*Classe*/
+.rappel{
+    color:var(--couleur-classe);
+}
+
+.rappel{
+    color: var(--couleur-derniere);
+}
+/*A egalite, c'est la derniere regle ecrite qui gagne*/
+/*Vous devez voir le deuxieme paragraphe en vert*/
+
+/*L'heritage. On ne vise que le parent et la regle sera appliquee a lenfant*/
+/*Le parent*/
+.boite{
+   color:var(--couleur-derniere); /*color est transmis aux enfants qui n'ont rien d'autre*/
+   margin: var(--espace-boite); /*margin n'est pas transmis elle reste sur la boite*/
+}
+/*Vous devez voir l enfant reste bleu. La regle p vise directement et elle bat ce qui est herite*/
+/*herite de section.boite sa marge reste celle d'un p ordinaire, 16px en haut et en bas : celle de la boite n'est pas passee*/

@@ -1,0 +1,30 @@
+/*ETAPE 1, SANS AUCUN CSS*/
+/*LE NAVIGATEUR APPLIQUE DEJA SA PROPRE FEUILLE DE STYLE*/
+/*VOUS DEVEZ VOIR DANS F12, PANNEAU STYLE, LA MENTION USER AGENT STYLESHEET (FEUILLE DE STYLE DU NAVIGATEUR) : 
+BODY : MARGIN 8PX, UN LISERE BLANC TOUT AUTOUR
+H1 : GRANDES MARGES. UL: RETRAIT A GAUCHE DE 40PX. CHAMP ET BOUTON : POLICE PLUS PETITE, 13,33PX
+SOUS L'IMAGE : 4PX DE VIDE DANS LE CADRE, CAR UNE IMAGE SE POSE SUR LA LIGNE DE TEXTE*/
+
+/*ETAPE 2, L'ANCIENNE METHODE, "TOUT A ZERO"*/
+/*TAPEZ CES TROIS LIGNES, PUIS REGARDEZ*/
+/*
+*{
+    margin:0;
+    padding:0;
+}*/
+/*vous devez voir les puces sortent de la page par la gauche, le bouton et le champ sont ecrases. On a tout retire, meme ce qui servait, et il faut tout remettre. Effacer cette ligne
+L espace sous l'image et les polices, eux, n'ont pas change : le probleme reste entier*/
+
+/*ETAPE 3 : INITIALISATION MINIMALE. ON NE CHANGE QUE CE QUI GENE VRAIMENT*/
+/*Tous les elements et ce que le CSS peut gener*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;/*width comprend padding et bordure, partout*/
+}
+
+body{
+    margin:0;/*retire les 8px : c'est nous qui decidons de ce bord*/
+    line-height: 1.5;/*un interline confortable, herite par tout le texte*/ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;/*la police du systeme, heritee par le texte*/
+}

@@ -1,0 +1,31 @@
+
+
+:root{
+    --couleur-fond-boite:#f4efe4;/*le fond : il remplit contenu et padding*/
+    --couleur-bordure:#1f2a37;/*La bordure*/
+}
+
+/*le contenu et le padding*/
+/*La boite, dans l'ordre, de l'interieur vers l'exterieur*/
+.boite{
+    width:20rem;/*Le contenu : 320px*/
+    padding:2rem;/*Le padding : l'espace interieur, qui prend le fond*/
+    background-color: var(--couleur-fond-boite);/*Rend le padding visible*/
+    border:0.25rem solid var(--couleur-bordure);/*La bordure ajoutee a l etape 3*/
+    margin: 2rem;/*La marge ajoutee a l etape 3: l'espace exterieur, transparent*/
+    box-sizing: border-box;/*width comprend le padding et la bordure*/
+}
+
+/*La marge eloigne la boite des autres, sans en faire partie*/
+
+/*Deux marges verticalces qui se touchent*/
+.haut{
+    margin-bottom: 3rem; /*48px*/
+}
+
+.bas{
+    margin-top: 2rem; /*32px*/
+}
+
+/*Vous devez voir un ecart de 48px et pas de 80px. Entre deux blocs, la plus grande marge verticale l'emporte. Les marges orange se superpose dans l'inspecteur*/
+/*Sur les cotes, les marges ne fusionnent jamais, elles s'additionnent */
