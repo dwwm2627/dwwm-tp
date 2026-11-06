@@ -114,3 +114,10 @@ section{
 .temoignage figcaption{
     font-size: var(--texte-petit);
 }
+
+.prix{
+    margin: var(--espace-3);
+    font-size: var(--texte-grand);
+    font-weight: bold;
+
+}
