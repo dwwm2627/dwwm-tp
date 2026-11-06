@@ -51,3 +51,25 @@ h3{
     margin: 0 0 var(--espace-2);
     font-size: var(--texte-normal);
 }
+
+a{
+    color: var(--couleur-accent)
+}
+
+nav a{
+    margin-right: var(--espace-3);
+}
+
+a:focus-visible{
+    outline: 3px solid var(--couleur-texte);
+    outline-offset: 2px;
+}
+
+.bouton{
+    display: inline-block;
+    padding: var(--espace-2) var(--espace-4);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--couleur-fond);
+    background:var(--couleur-accent) ;
+}
