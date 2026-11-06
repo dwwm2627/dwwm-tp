@@ -73,3 +73,44 @@ a:focus-visible{
     color: var(--couleur-fond);
     background:var(--couleur-accent) ;
 }
+
+header{
+    margin-bottom: var(--espace-5);
+}
+
+.logo{
+    font-size: var(--texte-grand);
+    font-weight: bold;
+}
+
+.accroche img{
+    margin-top: var(--espace-3);
+}
+
+section{
+    margin-bottom: var(--espace-5);
+}
+
+.carte{
+    margin-bottom: var(--espace-3);
+    padding: var(--espace-3);
+    border: 1px solid var(--couleur-discrete);
+}
+
+.carte p{
+    margin:0;
+}
+
+.temoignage{
+    margin:0;
+    padding-left: var(--espace-3);
+    border-left: 0.25rem solid var(--couleur-discrete);
+}
+
+.temoignage blockquote{
+    margin: 0;
+}
+
+.temoignage figcaption{
+    font-size: var(--texte-petit);
+}
