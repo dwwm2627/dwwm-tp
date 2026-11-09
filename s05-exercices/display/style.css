@@ -1,4 +1,16 @@
 :root{
-    --couleur-fond-repere:#f4efe4;
+    --couleur-fond-repere:#f7aa02;
     --espace-3:1rem;
 }
+
+/*Etape : inline, la valeur par defaut d'un span*/
+/*span de la premier phrase*/
+.mot{
+    background-color: var(--couleur-fond-repere);/*montre la vraie taille de la boite*/
+    width: 20rem;/*ignore : une boite inline suit la largeur de son texte*/
+    height: 4rem;/*ignore : meme raison*/
+    margin-top: 4rem;/*ignore : les narges verticales ne poussen rien en inligne*/
+}
+/*vous devez voir le mot avec un fond de couleurm la phrase sans bouger, rien n a change*/
+/*dans l'inspecteur du navigateur, width et height sont grisees, avec un petit i, car ils sont sans effet ici*/
+/*margin-top n'est pas grisee et pourtant elle ne pousse rien, ATTENTION : calcule affiche quand meme la valeur. La vraie taille se lit au survol du span.*/
