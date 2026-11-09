@@ -64,5 +64,9 @@ img {
   display: flex;
   /*axe principal : un enfant a chaque bout*/
   justify-content: space-between;
+  /*axe secondaire : centres en hauteur*/
+  align-items: center;
 }
 /*vous devez voir le logo a gauche et le menu a droite*/
+/*vous devez voir les deux elements alignes sur la meme ligne mediane*/
+
