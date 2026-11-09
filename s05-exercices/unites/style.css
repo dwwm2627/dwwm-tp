@@ -1,0 +1,7 @@
+:root{
+   --couleur-font-repere:#faac04;
+   --couleur-barre:#00ff11; 
+}
+
+/*ETAPE 1 : PX ET REM*/
+/*1REM = LA TAILLE DU TEXTE DE LA RACINE, 16PX PAR DEFAUT*/
