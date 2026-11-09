@@ -36,3 +36,16 @@
     background-color: var(--couleur-font-repere) ;
 }
 /*vous devez voir la boite retrecir avec la fenetre. La barre en % de 20 rem, elle ne bouge pas*/
+
+/*ETAPE 4 : le pige des em*/
+.agrandi{
+    font-size: 1.2em;/*em= la taille du texte parent: l'effet se multiplie a chaque niveau*/
+}
+/*vous devez voir :1, 2, 3 de plus en plus grand*/
+
+/*
+A RETENIR
+-REM POUR LE TEXTE ET LES ESPACES; IL SUIT LE CHOIX DU VISITEUR. PX POUR UN TRAIT FIN.
+-% SUIT LE PARENT, VW SUIT LA FENETREM CH LIMITE UNE LIGNE DE TEXTE
+-EM SE MULTIPLIE QUAND ON EMBOITE, PREFEREZ TOUJOURS REM
+*/
