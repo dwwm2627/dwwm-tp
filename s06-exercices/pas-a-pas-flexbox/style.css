@@ -57,3 +57,12 @@ img {
 }
 /*vous devez voir les 3 elements du menu qui etaient les uns sous les autres, passent cote a cote. Il se touchent : c'est normal*/
 /*vous devez voir un espace regulier entre les liens*/
+
+/*Flexbox : l'en-tete est le parent*/
+.entete{
+  /*flexbox : le logo et menu se place en ligne*/
+  display: flex;
+  /*axe principal : un enfant a chaque bout*/
+  justify-content: space-between;
+}
+/*vous devez voir le logo a gauche et le menu a droite*/
