@@ -31,3 +31,10 @@
     padding: var(--espace-3);/*une zone cliquable plus confortable*/
 }
 /*vous devez voir une bande de couleur sur toute la largeur. Cliquez a droite du texte : le lien fonctionne*/
+
+/*Etape : none*/
+/*le premier paragraphe cacher*/
+.cache{
+    display: none;/*retire de l'affiche : aucune place et absent pour les lecteurs d'ecran*/
+}
+/*vous devez voir, la ligne disparaitre sans trou et ignoree en accessibilite*/
