@@ -1,0 +1,24 @@
+<!--DEMONSTRATION 10 : DISPLAY ET SES VALEURS-->
+<!--NOUVEAU, OBJECTIF : BLOCK, INLINE, INLINE-BLOCK, NONE : SAVOIR LAQUELLE CHOISIR-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <main>
+        <p>Un <span class="mot">mot en ligne</span> dans une phrase</p> <!-- span est par defaut inline -->
+        <p>Un <span class="badge">badge</span> dans une phrase</p><!--le meme span, qui deviendra inline-block-->
+        <a class="bloc" href="#fin">Un lien en bloc</a><!--a est par defaut inline, il deviendra bloc-->
+        <p class="cache" id="un">Ce texte a display : none</p><!--sorti de la page-->
+        <p class="invisible" id="deux">Ce texte a visibility : hidden</p><!--cache, mais il garde sa place-->
+        <p id="fin">Fin de la page</p><!--sert a voir l'ecart laisse au-dessus-->
+    </main>
+</body>
+</html>
