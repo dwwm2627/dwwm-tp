@@ -20,6 +20,18 @@ h2{
    color:red;
 }
 
+nav{
+   background-color: aquamarine;
+   height: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 1rem;
+   flex-direction: row-reverse;
+
+}
+
 nav a{
-   text-decoration: none;
+   text-decoration: none; 
+
 }
