@@ -46,3 +46,21 @@
 }
 /*vous devez voir un trou d une ligne au dessus de "fin de la page"*/
 
+/*QUAND LES UTILISER*/
+/*QUEL CAS, QUELLE VALEUR : */
+/*
+|CAS                                            |VALEUR             |
+|un bloc sur sa propre ligne                    |block              |
+|un lien dont toute la zone est cliquable       |block              |
+|un mot dans une phrase, sans reglage de boite  |inline             |
+|un bouton ou un badge dans une ligne           |inline-block       |
+|enlever de la page et de l'accessibilite       |none               |
+|cacher en gardans la place                     |visibility : hidden|
+|mettre les boites cotes a cote                 |flex, grid         |
+*/
+/*
+A retenir :
+-inline ignore width, height et les marges verticales
+-inline-block dans la ligne avec les reglages d'une boite
+-none retire la place et cache aux lecteurs d'ecran; visibility:hidden garde la place
+*/
