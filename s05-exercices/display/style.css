@@ -38,3 +38,11 @@
     display: none;/*retire de l'affiche : aucune place et absent pour les lecteurs d'ecran*/
 }
 /*vous devez voir, la ligne disparaitre sans trou et ignoree en accessibilite*/
+
+/*Etape : la difference avec visibility*/
+/*le deuxieme paragraphe a cacher*/
+.invisible{
+    visibility: hidden;/*invisible aussi pour les lecteurs d'ecran, mais il garde sa place*/
+}
+/*vous devez voir un trou d une ligne au dessus de "fin de la page"*/
+
