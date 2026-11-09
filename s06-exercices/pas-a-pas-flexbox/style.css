@@ -45,8 +45,15 @@ img {
   font-weight: bold;
 }
 
+/*Flexbox : la liste .menu est le parent*/
 .menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  /*flexbox : les enfants se placent en ligne*/
+  display: flex;
+  /*flexbox : un espace entre les liens*/
+  gap:var(--espace-3)
 }
+/*vous devez voir les 3 elements du menu qui etaient les uns sous les autres, passent cote a cote. Il se touchent : c'est normal*/
+/*vous devez voir un espace regulier entre les liens*/
