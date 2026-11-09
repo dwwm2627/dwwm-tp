@@ -5,3 +5,27 @@
 
 /*ETAPE 1 : PX ET REM*/
 /*1REM = LA TAILLE DU TEXTE DE LA RACINE, 16PX PAR DEFAUT*/
+.fixe{
+    font-size: 16px;/*taille fixe : elle ignore le reglage visiteur*/
+}
+
+.suit{
+    font-size: 1rem;/*relatif a la racine : il suit le reglage du visiteur*/
+}
+/*vous devez voir deux textes de la meme taille*/
+
+/*ETAPE 2 : % ET CH*/
+.parent{
+    width: 20rem;/*320px*/
+    background-color: var(--couleur-font-repere);/*montre le parent*/
+}
+
+.barre{
+    width: 50%;/*la moitie de la largeur du parent : 160px*/
+    background-color: var(--couleur-barre);   
+}
+
+.lecture{
+    max-width: 40ch;/*ch = la largeur du chiffre 0 : pratique pour limiter une ligne*/
+}
+/*vous devez voir : une barre deux fois moins long que son parent et des lignes courtes*/
