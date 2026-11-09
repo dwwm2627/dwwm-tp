@@ -23,3 +23,11 @@
     padding: var(--espace-3);/*ici le padding est appliquee*/
 }
 /*vous devez voir un badge dans la phrase, 160px en tout (8rem de contenu + le padding). C'est le cas d'un bouton dans un texte*/
+
+/*Etape : block*/
+.bloc{
+    background-color: var(--couleur-fond-repere);
+    display: block;/*sur sa propre lignem tout la largeur : toute la zone devient cliquable*/
+    padding: var(--espace-3);/*une zone cliquable plus confortable*/
+}
+/*vous devez voir une bande de couleur sur toute la largeur. Cliquez a droite du texte : le lien fonctionne*/
