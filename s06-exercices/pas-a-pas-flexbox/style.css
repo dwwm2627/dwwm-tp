@@ -62,6 +62,8 @@ img {
 .entete{
   /*flexbox : le logo et menu se place en ligne*/
   display: flex;
+  /*flexbox : a la ligne si le place manque*/
+  flex-wrap:wrap;
   /*axe principal : un enfant a chaque bout*/
   justify-content: space-between;
   /*axe secondaire : centres en hauteur*/
