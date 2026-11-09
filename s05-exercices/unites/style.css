@@ -29,3 +29,10 @@
     max-width: 40ch;/*ch = la largeur du chiffre 0 : pratique pour limiter une ligne*/
 }
 /*vous devez voir : une barre deux fois moins long que son parent et des lignes courtes*/
+
+/*ETAPE 3 : vw*/
+.ecran{
+    width: 30vw;/*1vw = 1% de la largeur de la fenetre. Quel que soit le parent*/
+    background-color: var(--couleur-font-repere) ;
+}
+/*vous devez voir la boite retrecir avec la fenetre. La barre en % de 20 rem, elle ne bouge pas*/
