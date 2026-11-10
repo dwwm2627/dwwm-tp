@@ -1,3 +1,96 @@
 /* Page personnelle — styles.
    Mardi : typographie, couleurs, espacements (« CSS from scratch »).
    Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
+h1{
+   color : #0ee823;
+   font-size: 16px;
+}
+
+h2{
+    color : #0ee823;
+   font-size: 1rem;
+}
+/*un point c est un class*/
+.important{
+   color:pink;
+}
+
+/*un hastag c est un id*/
+#toto{
+   color:red;
+}
+
+nav{
+   background-color: aquamarine;
+   height: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 1rem;
+   flex-direction: row-reverse;
+
+}
+
+nav a{
+   text-decoration: none; 
+
+}
+
+.projets{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap:1rem;
+}
+
+@media (min-width:48rem){
+   .projets{
+      grid-template-columns: repeat(3, 1fr);;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.c1{
+   background-color: blue;
+}
+.c2{
+   background-color: rgb(255, 0, 195);
+}
+.c3{
+   background-color: rgb(255, 64, 0);
+}
+.c4{
+   background-color: rgb(255, 255, 0);
+}
+.c5{
+   background-color: rgb(24, 2, 2);
+}
+.c6{
+   background-color: rgb(0, 238, 255);
+}

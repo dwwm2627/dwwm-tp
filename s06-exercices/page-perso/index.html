@@ -1,14 +1,78 @@
-<!doctype html>
-<!-- Page personnelle — fichier de départ.
-     Complétez ce squelette en suivant la page du lundi, puis lancez : node --test page-perso.test.js
-     Les tests vérifient la structure ; le validateur du W3C vérifie la syntaxe. -->
-<html>
-  <head>
-    <!-- TODO: encodage, viewport, titre, lien vers style.css -->
-  </head>
-  <body>
-    <!-- TODO: en-tête avec navigation, contenu principal (présentation, compétences,
-         projets, contact), pied de page -->
-    <p>À faire</p>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mom portfolio</title>
+</head>
+
+<body>
+<header>
+  <h1>Mon Prenom et mon nom</h1>
+  <nav>
+    <a href="">Accueil</a>
+    <a href="">Projets</a>
+    <a href="">Contact</a>
+  </nav>
+  
+</header>  
+
+<main>
+  <section>
+    <h2 class="important">Presentation</h2>
+    <p class="important" id="toto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, deleniti, debitis fuga magnam veritatis praesentium eum libero veniam aperiam eligendi aspernatur ipsam recusandae numquam esse at aut. Reiciendis, similique vitae!</p>
+    <img src="https://images.unsplash.com/photo-1788208291710-1a76b56b700d?q=80&w=712&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Image d'une voiture jaune">
+  </section>
+
+  <section>
+    <h2>Competences</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Le canard</li>
+    </ul>
+  </section>
+
+  
+   
+ 
+    
+   
+ 
+  
+  <form>
+    <fieldset>
+    <h2>Contact</h2>
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+    <label for="email">Votre email</label>
+    <input type="email" id="email" placeholder="email" required>
+    <label for="question">Votre question</label>
+    <input type="textarea" id="question" placeholder="text" required>
+    <button type="submit">Envoyer</button>
+    <p>Formulaire non fonctionnel (démonstration)</p>
+    </fieldset>
+  </form>
+
+
+<div class="projets">
+  <div class="c1">carte 1</div>
+  <div class="c2">carte 2</div>
+  <div class="c3">carte 3</div>
+  <div class="c4">carte 4</div>
+  <div class="c5">carte 5</div>
+  <div class="c6">carte 6</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</main>
+
+<footer></footer>
+</body>
 </html>
