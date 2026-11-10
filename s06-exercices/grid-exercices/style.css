@@ -54,10 +54,19 @@ section {
 /* Exercice 1 — La galerie (ensemble)
    a) .galerie en Grid : trois colonnes égales.
    b) Un espace entre les cases : gap: var(--espace-3). */
+   .galerie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:var(--espace-3)
+   }
 
 
 /* Exercice 2 — La page (seuls, guidé)
    .page en Grid : deux colonnes, la seconde deux fois plus large que la première. */
+   .page{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   }
 
 
 /* Exercice 3 — Les tarifs (seuls, semi-guidé)
