@@ -62,7 +62,29 @@ img {
    a) Styles de base : .galerie en Grid, une seule colonne, un espace entre les cases.
    b) À partir de 48rem : trois colonnes égales, dans une media query en min-width. */
 
+.galerie{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espace-3);
+}
+
 
 /* Exercice 2 — Le menu (seuls, semi-guidé)
    a) Styles de base : .menu en Flexbox, en colonne (flex-direction).
    b) À partir de 48rem : en ligne. */
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:48rem) {
+  .galerie{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu{
+    flex-direction: row;
+    gap:var(--espace-3)
+  }
+
+}
