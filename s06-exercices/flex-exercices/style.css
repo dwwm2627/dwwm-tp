@@ -41,16 +41,34 @@ img {
   height: auto;
 }
 
+
 /* Exercice 1 — Le menu (ensemble)
    a) .menu en Flexbox.
    b) Les liens répartis sur toute la largeur : justify-content: space-between. */
 
+   .menu{
+    display: flex;
+    justify-content: space-between ;
+   }
+   
 
 /* Exercice 2 — La fiche (seuls, guidé)
    a) .fiche en Flexbox : l'image à côté du texte.
    b) Un espace entre les deux : gap: var(--espace-3).
    c) Centrés en hauteur : align-items: center. */
+   .fiche{
+    display: flex;
+    gap:var(--espace-3);
+    align-items:center;
+   }
 
 
 /* Exercice 3 — Les badges (seuls, semi-guidé)
    La liste .badges : sur une ligne, sans puces, avec un espace, et qui passe à la ligne à 375 px. */
+   .badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--espace-2);
+    list-style: none;
+    padding: 0;
+   }
