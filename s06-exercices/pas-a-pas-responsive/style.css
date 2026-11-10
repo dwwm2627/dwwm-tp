@@ -64,3 +64,60 @@ img {
 .carte p {
   margin: 0;
 }
+
+/* Mobile first : l'en-tete, pour le telephone */
+.entete{
+  /* Flexbox : l'en-tete est un parent flex */
+  display: flex;
+  /* Flexbox : logo au dessus du menu */
+  flex-direction: column;
+  /* Flexbox : un petit espace entre les deux */
+  gap : var(--espace-2)
+}
+/* vous devez voir a 375px le logo au dessus du menu */
+
+/*Mobile first : la grille, pour le telephone*/
+.projets{
+  /*grid : les enfants se placent en grille*/
+  display: grid;
+  /* Mobile first : une seule colonne */
+  grid-template-columns: 1fr;
+  /* Grid : un espace entre les cartes */
+  gap : var(--espace-3)
+}
+/* vous devez voir une colonne a 375px; et encore une seule 1280px  : c'est depart*/
+
+
+
+/* Media query : a partir de 48 rem  (768px) */
+@media (min-width : 48rem){
+  /*Grand ecran : l'en-tete  */
+  .entete{
+    /* flexbox : logo et menu cote a cote */
+    flex-direction: row;
+    /* Axe principal : un enfant a chaque bout */
+    justify-content: space-between;
+    /* Axe secondaire : centres en hauteur */
+    align-items: center;
+  }
+
+  /*Flexbox : la liste .menu est le parent*/
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*flexbox : les enfants se placent en ligne*/
+  display: flex;
+  /*flexbox : un espace entre les liens*/
+  gap:var(--espace-3);
+}
+
+
+  /* Grand ecran : la grille change */
+  .projets{
+    /* Grid : trois colonnes egales */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* vous devez voir trois coloennes a 1280px, une seule a 375px et le changement se fait a 768px */
+
