@@ -71,3 +71,8 @@ section {
 
 /* Exercice 3 — Les tarifs (seuls, semi-guidé)
    .tarifs : deux colonnes égales, avec un espace entre elles. */
+   .tarifs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:var(--espace-3)
+   }
