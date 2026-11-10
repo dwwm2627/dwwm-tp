@@ -53,3 +53,15 @@ img {
 .carte p {
   margin: 0;
 }
+
+/*Grid : la section .projets est le parent*/
+.projets{
+  /*Grid : les enfants se placent en grille*/
+  display: grid;
+  /*Grid : trois colonnes egales, 1fr chacune*/ 
+  grid-template-columns: repeat(3, 1fr);
+  /*Grid : un espace entre les cartes*/
+  gap:var(--espace-3)
+}
+/*vous devez voir trois cartes par ligne, sur deux lignes, collees les unes aux autres*/
+/*vous devez voir le meme espace entre les colonnes et entre les lignes. A 375px, les trois colonnes sont trop etroites et la page deborde : c'est ce que corrige la partie mobile first que l on verra cet apres-midi*/
