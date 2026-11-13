@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description : le resume que les moteurs de recherche peuvent afficher sous le titre -->
+    <meta name="description" content="Prise Libre, association d'escalade pour debutants, association fictive, creee pour la formation">
+
+    <title>Prise libre, association d'escalade</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <p class="logo">Prise libre</p>
+        <nav>
+            <!-- le # vise un id de la meme page -->
+            <a href="#etapes">Comment ca marche</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#inscription">Inscriptions</a>
+        </nav>
+    </header>
+    <main>
+        <section class="accroche">
+            <h1>Grimpez des cette semaine, sans rien savoir de l'escalade</h1>
+            <p>Prise libre accueille les debutants trois soirs par semaine. Le materiel est prete, et un moniteur vous accompagne.</p>
+            <a href="#inscription" class="lien-secondaire">S'inscrire</a>
+            <img src="img/mur.svg" alt="Dessin d'un mour d'escalade, avec ses prises et un itineraires en pointilles" width="960" height="400">
+        </section>
+        <section id="etapes">
+            <h2>Comment ca marche?</h2>
+            <ol>
+                <li>Inscrivez-vous avec le formulaire de cette page.</li>
+                <li>Venez a une seance d'essai, en tenue de sport.</li>
+                <li>Choisissez votre formule, si l'activite vous plait.</li>
+            </ol>
+        </section>
+        <section id="tarifs">
+            <!-- Article : bloc qui garde son sens tout seul. Meme classe, meme boite... -->
+             <article class="carte">
+                <h3>Decouverte</h3>
+                <p class="prix">15 euros par mois</p>
+                <ul>
+                    <li>Une seance par semaine</li>
+                    <li>Materiel de pret inclus</li>
+                </ul>
+             </article>
+             <article class="carte carte-vedette">
+                <h3>Regulier</h3>
+                <p class="prix">30 euros par mois</p>
+                <ul>
+                    <li>Trois seances par semaine</li>
+                    <li>Materiel de pret inclus</li>
+                </ul>
+             </article>
+        </section>
+        <section id="inscription">
+            <h2>Inscription a une seance d'essai</h2>
+            <!-- Form : regoupe les champs et le bouton d'envoir -->
+             <form>
+                <!-- le lien entre l etiquette et son champ se fait avec for du label qui est egal a l'id de l'input. Avantages : cliquer sur l'etiquette place directement le curseur dans le champ et un lecteur d ecran annonce le nom du chanp -->
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" autocomplete="name" required>
+
+                <label for="email">Votre adresse email</label>
+                <input type="email" id="email" autocomplete="email" required>
+
+                <label for="formule">La formule qui vous interesse</label>
+               <!-- select : une liste de choix. option : chaque choix; value : la donnee a l'envoi -->
+                <select name="formule" id="formule">
+                    <option value="decouverte">Decouverte</option>
+                    <option value="regulier">Regulier</option>
+                </select>
+
+                <button class="bouton" type="submit">Demander ma seance</button>
+                <p class="note-formulaire">Formulaire non fonctionnel (demo)</p>
+
+             </form>
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Prise Livre est une association fictive, creee pour la formation</p>
+    </footer>
+</body>
+</html>

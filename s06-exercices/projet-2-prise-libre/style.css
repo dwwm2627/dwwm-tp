@@ -1,0 +1,190 @@
+/* 1. La base : initialisation minimale */
+/* On ne change que ce qui gêne vraiment */
+/* ----------------0. Box-sinzing------------- */
+*, *::before, *::after {
+/* width comprend padding et bordure, partout */
+box-sizing: border-box;
+}
+
+/* =================INITIALISATION DU CSS================ */
+body {
+/* Retire les 8 px : c'est nous qui décidons */
+margin: 0;
+/* Un interligne confortable, hérité partout */
+line-height: 1.5;
+/* La police du système, héritée par le texte */
+font-family: system-ui, -apple-system,
+BlinkMacSystemFont, "Segoe UI", Roboto,
+Oxygen, Ubuntu, Cantarell, "Open Sans",
+"Helvetica Neue", sans-serif;
+}
+img {
+/* Plus sur la ligne de texte : le vide disparaît */
+display: block;
+/* Jamais plus large que son parent */
+max-width: 100%;
+}
+/* Champs et boutons n'héritent pas de la police */
+input, button {
+/* Même police et même taille que le parent */
+font: inherit;
+}
+
+/* ----------------------2. Root----------------------- */
+/* 2. Les variables */
+/* :root = toute la page ; on change ici, partout */
+:root {
+--couleur-texte: #1f2a37;
+--couleur-fond: #fbfaf7;
+--couleur-accent: #3f2d86;
+--couleur-discrete:#d9d4c7;
+
+--espace-1: 0.25rem;
+--espace-2: 0.5rem;
+--espace-3: 1rem;
+--espace-4: 1.5rem;
+--espace-5: 2.5rem;
+
+--texte-petit:0.875rem;
+--texte-normal:1rem;
+--text-grand:1.25rem;
+--texte-titre:2rem;
+}
+
+/* ----------------------3. Body----------------------- */
+/* 3. Les éléments */
+body {
+/* var() lit la valeur d'une variable */
+color: var(--couleur-texte);
+background-color: var(--couleur-fond);
+max-width: 65ch;
+margin:0 auto;
+padding:var(--espace-3)
+}
+
+/* ----------------------4. Images----------------------- */
+
+img{
+    height: auto;
+}
+
+/* ----------------------5. Titres----------------------- */
+h1{
+    margin: 0 0 var(--espace-3);
+    font-size: var(--texte-titre);
+    line-height: 1.2;
+}
+
+h2{
+    margin: 0 0 var(--espace-3);
+    font-size: var(--text-grand);
+}
+
+h3{
+    margin: 0 0 var(--espace-2);
+    font-size: var(--texte-normal);
+}
+
+/* ==================LES COMPOSANTS===================== */
+/* ----------------------6. Les liens----------------------- */
+
+a {
+color: var(--couleur-texte);
+}
+
+nav a{
+    display:inline-block;
+    margin-right: var(--espace-3);
+}
+/* Le contour au clavier avec la touche tab */
+a:focus-visible{
+    outline: 3px solid var(--couleur-texte);
+    outline-offset: 2px;
+}
+
+.lien-secondaire{
+    display: inline-block;
+    padding: var(--espace-2) var(--espace-3);
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--couleur-texte);
+    margin-bottom: var(--espace-3);
+}
+
+/* ----------------------7. Les boites------------------- */
+header{
+    margin-bottom: var(--espace-5) ;
+}
+
+.logo{
+    font-size: var(--text-grand);
+    font-weight: bold;
+}
+
+/* .accroche img{
+    margin-top: var(--espace-3);
+} */
+ 
+section{
+    margin-bottom: var(--espace-5);
+}
+
+
+/* le modele de boite : contenu, padding, bordure, marge */
+.carte{
+    margin-bottom: var(--espace-3);
+    padding: var(--espace-3);
+    border: 1px solid var(--couleur-discrete);
+}
+/* La cascade. cette regle et .carte ont la meme specificite : une classe chacune. a egalite, c est la derniere ecrite qui l emporte. placer cette regle avant . carte */
+.carte-vedette{
+    border: 2px solid var(--couleur-texte);
+}
+
+.prix{
+    margin:0 0 var(--espace-2);
+    font-size: var(--text-grand);
+    font-weight: bold;
+}
+
+/* ------------------8. Le formulaires------------------- */
+/* Un label est en ligne par defaut. Display : block permet qu il prenne sa propre lignem au dessus de son champ*/
+label{
+    display: block;
+    margin-bottom: var(--espace-1);
+    font-weight: bold;
+}
+
+/* Width : 100% ; Le champ prend toute la largeur. Grace a border-box, son padding ne le fait pas deborder 
+font:inherit permet au champ et au bouton d'heriter de la police par defaut definit dans l initialisation*/
+input, select{
+    width: 100%;
+    margin-bottom: var(--espace-3);
+    font: inherit;
+    border: 1px solid var(--couleur-texte);
+}
+
+/* L'action principale de la page : le SEUL element dont le fond est en couleur d'accent. Une seule couleur d'accent a une seul endroit : l oeil sait tout de suis ou agir */
+.bouton{
+    padding: var(--espace-2) var(--espace-4) ;
+    font-weight: bold;
+    color: var(--couleur-fond);
+    background: var(--couleur-accent);
+    border:0;
+}
+
+.note-formulaire{
+    font-size: var(--texte-petit);
+}
+
+/* Le contour au clavier, sur tout ce qui s atteint avec tab dans le formulaire */
+input:focus-visible,
+select:focus-visible,
+button:focus-visible{
+    outline: 3px solid var(--couleur-texte);
+    outline-offset: 2px;
+}
+
+
+
+
