@@ -4,5 +4,5 @@
 
 export function double(numbers) {
   // TODO: replace the line below with your code.
-  return `À faire (${numbers})`;
+  return numbers.map((n) => n * 2);
 }
