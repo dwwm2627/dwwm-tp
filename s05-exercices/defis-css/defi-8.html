@@ -6,9 +6,44 @@
     <meta charset="utf-8">
     <title>Défi CSS 8</title>
     <style>
-      body { margin: 0; width: 400px; height: 300px; }
+      body { 
+        margin: 0; 
+        width: 400px; 
+        height: 300px; 
+        background: #f4f1ea;
+        display:grid;
+        place-items: center;
+      }
+      .disque{
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+      }
+      .grand{
+        background: #1f2a4a;
+        width:240px;
+        height: 240px;
+      }
+      .moyen{
+        background: #f4f1ea;
+        width:160px;
+        height: 160px;
+      }
+      .petit{
+        background: #b3122e;
+        width:80px;
+        height: 80px;
+      }
+
     </style>
   </head>
   <body>
+    <div class="disque grand">
+      <div class="disque moyen">
+        <div class="disque petit"></div>
+      </div>
+    </div>
+    
+    
   </body>
 </html>

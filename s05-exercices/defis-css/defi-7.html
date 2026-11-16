@@ -6,9 +6,31 @@
     <meta charset="utf-8">
     <title>Défi CSS 7</title>
     <style>
-      body { margin: 0; width: 400px; height: 300px; }
+      body { 
+        margin: 0; 
+        width: 400px; 
+        height: 300px; 
+        display: flex;
+        flex-direction: column;
+      }
+      .haut{
+        background: #b3122e;
+        height:60px;
+      }
+      .milieu{
+        background: #f4f1ea;
+        flex:1;
+      }
+      .bas{
+        background: #1f2a5a;
+        height: 60px;
+      }
+    
     </style>
   </head>
   <body>
+    <div class="haut"></div>
+    <div class="milieu"></div>
+    <div class="bas"></div>
   </body>
 </html>
