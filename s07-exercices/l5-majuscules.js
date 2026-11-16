@@ -5,5 +5,12 @@
 
 export function capitalizeAll(words) {
   // TODO: replace the line below with your code.
-  return `À faire (${words})`;
+  return words.map((word)=> {    //word.length === 0 ? '' :
+    if (word.length === 0){
+      return '';
+    }
+    return word[0].toUpperCase() + word.slice(1);
+  });
 }
+
+
