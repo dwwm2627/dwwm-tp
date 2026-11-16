@@ -6,5 +6,5 @@
 
 export function pricesWithTax(prices) {
   // TODO: replace the line below with your code.
-  return `À faire (${prices})`;
+  return prices.map((price) => Math.round(price * 1.2 * 100) / 100);
 }
