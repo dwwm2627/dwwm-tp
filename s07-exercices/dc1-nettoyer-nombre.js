@@ -5,5 +5,11 @@
 
 export function toNumber(value) {
   // TODO: replace the line below with your code.
-  return `À faire (${value})`;
+  if(typeof value !== 'string' || value.trim() === ''){
+    return null;
+  }
+const number = Number(value);
+return Number.isNaN(number) ? null : number;
 }
+
+
