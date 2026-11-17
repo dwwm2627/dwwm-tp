@@ -1,0 +1,29 @@
+/* Les variables : couleurs et espacements, écrits une seule fois */
+:root {
+  --couleur-principale: #1f4e8c;
+  --couleur-texte: #1a1a1a;
+  --couleur-fond-carte: #eef3fa;
+  --espace-s: 0.5rem;
+  --espace-m: 1rem;
+  --espace-l: 2rem;
+}
+
+/* La page : police, couleur du texte, marges */
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--couleur-texte);
+  line-height: 1.5;
+  margin: var(--espace-m);
+}
+
+/* Le fond de la carte, pour voir son padding */
+.carte {
+  background-color: var(--couleur-fond-carte);
+}
+
+/* Le texte du bouton */
+.bouton {
+  color: white;
+}
+
+/* Écrivez vos règles en dessous, dans l'ordre des questions. */
