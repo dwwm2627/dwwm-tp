@@ -21,3 +21,11 @@ console.log(museum);
 console.log(museum.name); // affiche le nom
 console.log(museum.city); // affiche la ville
 console.log(museum.country); //affiche undefined car la clef country n'existe pas
+
+// ETAPE 3 : modifier, ajouter
+// affectation : change la valeur d'une propriete
+museum.total = 170000;
+// nouvelle cle : la propriete est ajoutee
+museum.department = 'Haut-Rhin';
+// affiche tout l'objet
+console.log(museum);
