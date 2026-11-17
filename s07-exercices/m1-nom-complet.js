@@ -4,5 +4,5 @@
 
 export function fullName(person) {
   // TODO: replace the line below with your code.
-  return `À faire (${person})`;
+  return `${person.firstName} ${person.lastName}`;
 }

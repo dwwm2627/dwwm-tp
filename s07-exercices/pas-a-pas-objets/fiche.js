@@ -29,3 +29,19 @@ museum.total = 170000;
 museum.department = 'Haut-Rhin';
 // affiche tout l'objet
 console.log(museum);
+
+// ETAPE 4 : tableau d'objets
+// creer un tableau de 3 musees et on va recuperer leurs noms avec map
+// tableau d'objets : 3 musees
+const museums = [
+    //chaque element du tableau est un objet
+    {name : 'musee Arthur Rimbaud', total: 29212},
+    {name : `musee de l'Ardenne`, total: 51775},
+    {name : `musee du Chateu-fort`, total: 59853},
+];
+// map : le nom de chaque musee
+console.log(museums.map((item)=>item.name));
+
+// ETAPE 5 : exercice 
+// en utilisant find, chercher dans museums, le premier musee de plus de 50000 visites
+console.log(museums.find((item)=>item.total > 50000));

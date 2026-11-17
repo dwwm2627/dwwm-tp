@@ -4,5 +4,5 @@
 
 export function museumLabel(museum) {
   // TODO: replace the line below with your code.
-  return `À faire (${museum})`;
+  return `${museum.name} (${museum.city})`;
 }
