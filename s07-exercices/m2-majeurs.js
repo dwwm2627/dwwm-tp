@@ -5,5 +5,5 @@
 
 export function adultNames(people) {
   // TODO: replace the line below with your code.
-  return `À faire (${people})`;
+  return people.filter((person) => person.age >= 18).map((person) => person.name) ;
 }
