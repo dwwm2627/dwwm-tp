@@ -18,9 +18,9 @@ if(age >= 18){
 }
 
 
-let note = 15;
+const note = 15;
 
-let resultat = note >= 16
+const resultat = note >= 16
     ? "Très bien"
     : note >= 10
         ? "Admis"
