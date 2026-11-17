@@ -3,5 +3,5 @@
 
 export function positives(numbers) {
   // TODO: replace the line below with your code.
-  return `À faire (${numbers})`;
+  return numbers.filter((n)=> n > 0);
 }
