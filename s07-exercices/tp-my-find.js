@@ -4,6 +4,10 @@
 // N'utilisez PAS la méthode du même nom : une boucle for...of (semaine 3) suffit.
 
 export function myFind(array, callback) {
-  // TODO: replace the line below with your code.
-  return `À faire (${array}, ${callback})`;
+  for(const element of array){
+    if(callback(element)){
+      return element;
+    }
+  }
+  return undefined;
 }
