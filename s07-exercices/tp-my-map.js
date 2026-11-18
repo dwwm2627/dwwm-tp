@@ -4,6 +4,9 @@
 // N'utilisez PAS la méthode du même nom : une boucle for...of (semaine 3) suffit.
 
 export function myMap(array, callback) {
-  // TODO: replace the line below with your code.
-  return `À faire (${array}, ${callback})`;
+  const result=[];
+  for(const element of array){
+    result.push(callback(element));
+  }
+  return result;
 }
