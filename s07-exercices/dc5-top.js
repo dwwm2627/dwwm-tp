@@ -7,5 +7,5 @@
 
 export function topMuseums(museums, n) {
   // TODO: replace the line below with your code.
-  return `À faire (${museums}, ${n})`;
+  return museums.toSorted((a, b) => b.total - a.total).slice(0, n) ;
 }
