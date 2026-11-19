@@ -5,5 +5,5 @@
 
 export function sortPrices(prices) {
   // TODO: replace the line below with your code.
-  return `À faire (${prices})`;
+  return prices.toSorted((a, b) => a - b);
 }
