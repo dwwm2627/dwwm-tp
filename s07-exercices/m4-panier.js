@@ -4,5 +4,5 @@
 
 export function cartTotal(items) {
   // TODO: replace the line below with your code.
-  return `À faire (${items})`;
+  return items.reduce((total, item) => total + item.price * item.quantity, 0);
 }
