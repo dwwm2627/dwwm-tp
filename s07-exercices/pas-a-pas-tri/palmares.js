@@ -28,3 +28,16 @@ const descending = visits.toSorted((a, b) => b - a);
 console.log(descending);
 // toSorted n'a pas modifié le tableau recu
 console.log(visits);
+
+// ETAPE 4 : trier des objets
+// tableau d'objets : trois musées
+const museums = [
+    // chaque élément : un objet {name, total}
+    {name : `musée Arthur Rimbaud`, total: 29212},
+    {name : `écomusée d'Alsace`, total: 179932},
+    {name : `musée de l'Ardenne`, total: 51775},
+];
+// trie les objets selon leur champ total
+const ranking = museums.toSorted((a,b) => b.total - a.total );
+// map : les noms, du plus visité au moins visité
+console.log(ranking.map((item) => item.name));
