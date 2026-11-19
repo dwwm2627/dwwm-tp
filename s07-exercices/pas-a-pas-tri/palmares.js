@@ -41,3 +41,9 @@ const museums = [
 const ranking = museums.toSorted((a,b) => b.total - a.total );
 // map : les noms, du plus visité au moins visité
 console.log(ranking.map((item) => item.name));
+
+// ETAPE 5 : affichez les noms du moins visité au plus visité
+// la console doit afficher [ 'musée Arthur Rimbaud', "musée de l'Ardenne", "écomusée d'Alsace" ]
+const ranking2 = museums.toSorted((a,b) => a.total - b.total  );
+// map : les noms, du plus visité au moins visité
+console.log(ranking2.map((item) => item.name));
