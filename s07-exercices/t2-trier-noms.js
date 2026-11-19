@@ -6,5 +6,5 @@
 
 export function sortNames(names) {
   // TODO: replace the line below with your code.
-  return `À faire (${names})`;
+  return names.toSorted((a,b) => a.localeCompare(b, 'fr'));
 }
