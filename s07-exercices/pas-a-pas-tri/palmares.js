@@ -6,3 +6,16 @@
 const visits = [3165, 29212, 51775, 3808, 1207, 179932];
 // Affiche les données de départ
 console.log(visits);
+
+// ETAPE 1 : trier sans fonction de comparaison
+// toSorted sans argument : trie comme des textes
+const asText = visits.toSorted();
+// Surprise : 179932 arrive juste apres 1207
+console.log(asText);
+
+// ETAPE 2 : Comparer des nombres
+// on donne la fonction (a, b) => a -b
+// Comparaison : a -b range du plus petit au plus grand
+const ascending = visits.toSorted((a, b) => a -b);
+// affiche les visites dans l'ordre croissant
+console.log(ascending);
