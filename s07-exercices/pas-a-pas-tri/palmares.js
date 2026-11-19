@@ -19,3 +19,12 @@ console.log(asText);
 const ascending = visits.toSorted((a, b) => a -b);
 // affiche les visites dans l'ordre croissant
 console.log(ascending);
+
+// ETAPE 3 : Le palmarès et l'original
+// on va trier du plus grand au plus petit puis afficher visits
+// b - a : du plsu grand au plus petit
+const descending = visits.toSorted((a, b) => b - a);
+// afficher le palmarès des visites
+console.log(descending);
+// toSorted n'a pas modifié le tableau recu
+console.log(visits);
