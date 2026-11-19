@@ -4,5 +4,5 @@
 
 export function sum(numbers) {
   // TODO: replace the line below with your code.
-  return `À faire (${numbers})`;
+  return numbers.reduce((total, n) => total + n, 0);
 }
