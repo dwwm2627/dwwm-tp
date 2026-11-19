@@ -12,3 +12,9 @@ const sorted = prices.sort((a, b)=> a-b );
 console.log(sorted);
 // la methode sort() ne crée pas de copie elle trie le tableau original
 console.log(prices);
+
+// je déclare un tableau d'objets
+const museums = [{name:'A', total : 5}, {name:'B', total:9}];
+const ranking = museums.toSorted((a,b)=> b.total - a.total);
+console.log(ranking);
+console.log(museums);
