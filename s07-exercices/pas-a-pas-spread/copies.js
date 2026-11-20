@@ -31,3 +31,16 @@ const moved = {...museum, city:`METZ`};
 // l'original n'a pas changé, il garde sa ville
 console.log("ETAPE 3 : ORIGINAL", museum);
 console.log("ETAPE 3 : COPIE", moved);
+
+// ETAPE 4 : trier une copie : la deuxième facon
+// visites de trois musées
+const visits = [51775, 3165, 29212];
+// spread puis sort : on trie la copie, pas l'original
+const sorted = [...visits].sort((a,b) => a - b); // toSorted
+// deuxieme facon de trier sans modifier le tableau recu (original)
+console.log(visits, sorted);
+
+// ETAPE 5 : créer une copie updated  avec le total : 165484
+// on affiche museum et updated
+// vous devez voir museum sans total et updated avec un total
+// a faire pour lundi + palier 1 minimum et 2 fortement conseillé
