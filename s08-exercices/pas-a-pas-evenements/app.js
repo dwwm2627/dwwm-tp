@@ -29,3 +29,17 @@ button.addEventListener('click', ()=>{
   // visible dqns le consolem a chaque clic
   console.log('clic !');
 })
+
+// ETAPE 2 : COMPTER LES CLICS
+//le paragraphe du compteur
+const counter = document.querySelector(`#compteur`);
+//le nombre de clics, qui va changer : let
+let clicks = 0;
+// un deuxieme ecouteur sur le meme bouton
+button.addEventListener('click', ()=>{
+  // un click de plus
+  clicks = clicks + 1;
+  // le nouvea nombre, ecrit dans la page
+  counter.textContent = `${clicks} clics`
+})
+
