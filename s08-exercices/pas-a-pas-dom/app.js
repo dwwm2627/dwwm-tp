@@ -40,3 +40,7 @@ for(const domain of museum.domains){
   // append : l'ajoute a la fin de la liste
   list.append(item);
 }
+
+// ETAPE 5 : MASQUER UN ELEMENT
+// hidden : masque le paragraphe, sans le supprimer
+note.hidden = true;
