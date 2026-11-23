@@ -27,3 +27,16 @@ const note = document.createElement('p');
 note.textContent = "Un musée de France, en Bretagne";
 // append : ajoute cet element a la fin de <main>
 document.querySelector(`main`).append(note);
+
+// ETAPE 4 : UNE LISTE A PARTIR D'UN TABLEAU
+// la liste des domaines, vide pour l'instant
+const list = document.querySelector('#domaines');
+//for...of : une fois pour chaque domaine
+for(const domain of museum.domains){
+  // un nouvel <li> pour ce domaine
+  const item = document.createElement('li');
+  //son texte : le nom du domaine
+  item.textContent = domain
+  // append : l'ajoute a la fin de la liste
+  list.append(item);
+}
