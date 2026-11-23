@@ -20,3 +20,12 @@ function showList(items) {
 }
 
 showList(names);
+
+// ETAPE 1 : UN ECOUTEUR DE BOUTON
+// Le bouton de la page
+const button = document.querySelector('#bouton');
+// addEventListerner : quand on clique, la fonction s'execute
+button.addEventListener('click', ()=>{
+  // visible dqns le consolem a chaque clic
+  console.log('clic !');
+})
