@@ -44,3 +44,7 @@ for(const domain of museum.domains){
 // ETAPE 5 : MASQUER UN ELEMENT
 // hidden : masque le paragraphe, sans le supprimer
 note.hidden = true;
+
+// ETAPE 6 : POSER UEN CLASSE CSS
+// classList.add : ajoute la classe CSS important a la ville
+document.querySelector('#ville').classList.add('important');
