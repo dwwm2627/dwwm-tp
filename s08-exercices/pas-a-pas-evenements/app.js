@@ -60,7 +60,14 @@ field.addEventListener('input', ()=>{
   //le texte tape, en miniscules
   const query = field.value.toLowerCase();
   // filter : garde les noms qui contiennet ce texte
-  const found = names.filter((name)=>name.includes(query))
+  const found = names.filter((name)=>name.toLowerCase().includes(query))
   //on reaffiche la liste avec les noms gardes
   showList(found);
-})
+
+// ETAPE 5 : DANS L ECOUTEUR DE L ETAPE 4
+// QUAND AUCUN NOM NE CORRESPOND (found.length === 0), alors j'affiche 'aucun musée´ dans le paragraphe typed
+if(found.length === 0){
+  typed.textContent = 'aucun musée'
+}
+});
+
