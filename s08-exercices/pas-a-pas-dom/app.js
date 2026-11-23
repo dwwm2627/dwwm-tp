@@ -48,3 +48,9 @@ note.hidden = true;
 // ETAPE 6 : POSER UEN CLASSE CSS
 // classList.add : ajoute la classe CSS important a la ville
 document.querySelector('#ville').classList.add('important');
+
+// ETAPE 7 : AJOUTER LES DOMAINES SUIVANTS
+// Technique et Industrie 
+const newItem = document.createElement('li');
+newItem.textContent = "Technique et Industrie";
+list.append(newItem);
