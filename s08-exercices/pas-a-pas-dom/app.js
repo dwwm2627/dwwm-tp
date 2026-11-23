@@ -13,3 +13,9 @@ const title = document.querySelector('#titre');
 //  afficher l'element trouve dans la console
 // ca se passe dans la console du navigateur web et plus dans le terminale comme avant avec node
 console.log(title);
+
+// ETAPE 2 : CHANGER LE TEXTE CICBLE
+// textContent : remplace le texte du titre
+title.textContent = museum.name;
+// meme chose pour le paragraphe de la ville
+document.querySelector('#ville').textContent = museum.city
