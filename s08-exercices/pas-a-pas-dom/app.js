@@ -6,3 +6,10 @@ const museum = {
   domains: ['Ethnologie', 'Histoire', 'Sciences de la nature'],
 };
 console.log(museum);
+
+// ETAPE 1 : TROUVER UN ELEMENT
+// querySelector :  trouve l'element d'id titre
+const title = document.querySelector('#titre'); 
+//  afficher l'element trouve dans la console
+// ca se passe dans la console du navigateur web et plus dans le terminale comme avant avec node
+console.log(title);

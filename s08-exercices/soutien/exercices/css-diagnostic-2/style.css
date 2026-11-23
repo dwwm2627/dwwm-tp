@@ -1,0 +1,35 @@
+/* Les variables : couleurs et espacements, écrits une seule fois */
+:root {
+  --couleur-accent: #8c2f1f;
+  --couleur-texte: #1a1a1a;
+  --couleur-fond-encart: #f6eee6;
+  --espace-s: 0.5rem;
+  --espace-m: 1rem;
+  --espace-l: 2rem;
+}
+
+/* La page : police, couleur du texte, marges */
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--couleur-texte);
+  line-height: 1.5;
+  margin: var(--espace-m);
+}
+
+/* Le fond de l'encart, pour voir son padding */
+.encart {
+  background-color: var(--couleur-fond-encart);
+}
+
+/* Le texte de l'étiquette */
+.etiquette {
+  color: white;
+}
+
+/* Le fond de chaque vignette */
+.vignettes article {
+  background-color: var(--couleur-fond-encart);
+  padding: var(--espace-s);
+}
+
+/* Écrivez vos règles en dessous, dans l'ordre des questions. */

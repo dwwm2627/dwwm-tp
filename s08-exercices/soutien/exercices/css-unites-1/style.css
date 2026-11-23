@@ -1,0 +1,35 @@
+/* La page : police, couleur du texte, marges */
+body {
+  font-family: system-ui, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+/* Le fond de la carte, pour voir sa largeur */
+.carte {
+  background-color: #eef3fa;
+  padding: 1rem;
+}
+
+/* Les exemples des cinq questions (déjà écrits, à lire) */
+
+/* Exemple 1 : la taille du texte, en rem */
+.intro {
+  font-size: 1.25rem;
+}
+
+/* Exemples 2 et 3 : une largeur en %, une bordure en px */
+.rayons {
+  width: 60%;
+  border: 1px solid #1f4e8c;
+}
+
+/* Exemples 4 et 5 : les enfants en ligne, espacés, au centre */
+.rayons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Écrivez vos règles en dessous, dans l'ordre des questions. */

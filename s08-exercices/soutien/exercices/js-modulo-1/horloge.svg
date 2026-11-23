@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+  <title id="t">15 % 12 vaut 3</title>
+  <desc id="d">Une horloge de 12 heures. Après 12, on repart de 0 : 15 heures tombent sur le 3, car 15 % 12 vaut 3. De même, 24 % 12 vaut 0, que l'horloge affiche 12.</desc>
+  <rect width="760" height="380" fill="#ffffff"/>
+  <circle cx="190" cy="190" r="140" fill="#f6f7f9" stroke="#1c1e21" stroke-width="4"/>
+  <text x="245" y="104" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">1</text>
+  <text x="285" y="144" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">2</text>
+  <text x="300" y="199" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#8a1c1c">3</text>
+  <text x="285" y="254" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">4</text>
+  <text x="245" y="294" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">5</text>
+  <text x="190" y="309" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">6</text>
+  <text x="135" y="294" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">7</text>
+  <text x="95" y="254" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">8</text>
+  <text x="80" y="199" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">9</text>
+  <text x="95" y="144" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">10</text>
+  <text x="135" y="104" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">11</text>
+  <text x="190" y="89" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="normal" fill="#1c1e21">12</text>
+  <line x1="190" y1="190" x2="270" y2="190" stroke="#8a1c1c" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="190" cy="190" r="7" fill="#1c1e21"/>
+  <text x="380" y="110" font-family="sans-serif" font-size="24" fill="#1c1e21">15 h : un tour (12),</text>
+  <text x="380" y="152" font-family="sans-serif" font-size="24" fill="#1c1e21">plus 3 : l'aiguille est sur 3.</text>
+  <text x="380" y="194" font-family="sans-serif" font-size="24" fill="#1c1e21"></text>
+  <text x="380" y="236" font-family="monospace" font-size="24" fill="#1c1e21">15 % 12 vaut 3</text>
+  <text x="380" y="278" font-family="monospace" font-size="24" fill="#1c1e21">24 % 12 vaut 0 :</text>
+  <text x="380" y="320" font-family="sans-serif" font-size="24" fill="#1c1e21">on affiche 12</text>
+</svg>

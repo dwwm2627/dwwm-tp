@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+  <title id="t">Mobile first : le téléphone d'abord, puis la @media</title>
+  <desc id="d">À gauche, un téléphone de 375 pixels : les règles écrites hors de toute @media, une seule colonne de trois cartes. À droite, un écran de 1280 pixels : à partir de 48rem, la règle @media (min-width: 48rem) s'ajoute, et les trois cartes sont côte à côte.</desc>
+  <rect width="760" height="380" fill="#ffffff"/>
+  <rect x="40" y="40" width="150" height="300" rx="18" fill="#f6f7f9" stroke="#1c1e21" stroke-width="4"/>
+  <rect x="60" y="80" width="110" height="60" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <rect x="60" y="160" width="110" height="60" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <rect x="60" y="240" width="110" height="60" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <text x="115" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1c1e21">375 px</text>
+  <text x="115" y="370" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#1c1e21">hors de @media</text>
+  <path d="M215 190 H275" stroke="#1c1e21" stroke-width="4"/><polygon points="275,180 295,190 275,200" fill="#1c1e21"/>
+  <rect x="320" y="80" width="410" height="220" rx="10" fill="#f6f7f9" stroke="#1c1e21" stroke-width="4"/>
+  <rect x="340" y="150" width="110" height="80" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <rect x="470" y="150" width="110" height="80" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <rect x="600" y="150" width="110" height="80" rx="6" fill="#e8f0fb" stroke="#1f5fbf" stroke-width="3"/>
+  <text x="525" y="60" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1c1e21">1280 px</text>
+  <text x="525" y="340" text-anchor="middle" font-family="monospace" font-size="18" fill="#1c1e21">@media (min-width: 48rem) s'ajoute</text>
+</svg>

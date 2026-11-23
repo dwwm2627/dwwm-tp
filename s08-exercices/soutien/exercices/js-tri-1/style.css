@@ -1,0 +1,32 @@
+/* Page already written: you do not need to change this file. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1c1e21;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.resultat {
+  min-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f6f7f9;
+  border-left: 4px solid #1f5fbf;
+}
+
+.vide {
+  color: #8a1c1c;
+  border-left-color: #8a1c1c;
+}

@@ -1,0 +1,46 @@
+/* Styles already written: the page, the header, the cards. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1c1e21;
+}
+
+header {
+  padding: 1rem;
+  color: #ffffff;
+  background: #1f2a5a;
+}
+
+.site {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  color: #ffffff;
+}
+
+main {
+  padding: 1rem;
+}
+
+.carte {
+  padding: 1rem;
+  border: 2px solid #8a8f98;
+  border-radius: 8px;
+}
+
+/* Write your rules under this line, one step at a time. */
