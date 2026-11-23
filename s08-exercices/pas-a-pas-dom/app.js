@@ -19,3 +19,11 @@ console.log(title);
 title.textContent = museum.name;
 // meme chose pour le paragraphe de la ville
 document.querySelector('#ville').textContent = museum.city
+
+//ETAPE 3 : CREER UN ELEMENT
+// createElement : cree un paragraphe, pas encore affiche
+const note = document.createElement('p');
+// son texte
+note.textContent = "Un musée de France, en Bretagne";
+// append : ajoute cet element a la fin de <main>
+document.querySelector(`main`).append(note);
