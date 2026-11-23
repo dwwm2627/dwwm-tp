@@ -43,3 +43,13 @@ button.addEventListener('click', ()=>{
   counter.textContent = `${clicks} clics`
 })
 
+// ETAPE 3 : LIRE UN CHAMP
+// Le champ de saisie :
+const field = document.querySelector('#filtre');
+//le paragraphe qui recopie la saisie
+const typed = document.querySelector('#saisie');
+// input : a chaque caractere taoer ou efface
+field.addEventListener('input', ()=>{
+  // field.value : le texte tape dans le champ
+  typed.textContent = `Vous avez tape : ${field.value}`;
+});
