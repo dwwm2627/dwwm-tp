@@ -53,3 +53,14 @@ field.addEventListener('input', ()=>{
   // field.value : le texte tape dans le champ
   typed.textContent = `Vous avez tape : ${field.value}`;
 });
+
+// ETAPE 4 : FILTER LA LISTE EN TAPANT
+// Un deuxieme ecouteur input : filtrer la liste
+field.addEventListener('input', ()=>{
+  //le texte tape, en miniscules
+  const query = field.value.toLowerCase();
+  // filter : garde les noms qui contiennet ce texte
+  const found = names.filter((name)=>name.includes(query))
+  //on reaffiche la liste avec les noms gardes
+  showList(found);
+})
