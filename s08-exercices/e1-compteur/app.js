@@ -5,3 +5,16 @@
 // 4. Clic sur « Remettre à zéro » : le nombre revient à 0 et s'affiche.
 // Vérifiez dans le navigateur : 3 clics donnent 3 ; la remise donne 0 ; au clavier aussi
 // (Tab jusqu'au bouton, puis Entrée).
+
+const showm = document.querySelector(`#valeur`);
+let visitors = 0;
+
+document.querySelector(`#entree`).addEventListener(`click`, ()=>{
+    visitors=visitors+1;
+    showm.textContent = visitors;
+});
+
+document.querySelector(`#remise`).addEventListener(`click`, ()=>{
+    visitors = 0;
+    showm.textContent = visitors;
+})
