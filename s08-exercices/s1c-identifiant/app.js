@@ -11,3 +11,12 @@
 import { MUSEUMS } from '../data/musees-bretagne.js';
 import { idLabel } from './logic.js';
 console.log('Données chargées :', MUSEUMS.length, 'musées', idLabel);
+
+document.querySelector(`#resume`).textContent = `${MUSEUMS.length} identifiants`;
+
+const list = document.querySelector(`#liste`);
+for(const museum of MUSEUMS){
+    const item = document.createElement(`li`)
+    item.textContent = idLabel(museum);
+    list.append(item);
+}
