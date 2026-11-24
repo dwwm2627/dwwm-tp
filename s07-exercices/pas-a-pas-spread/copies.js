@@ -44,3 +44,7 @@ console.log(visits, sorted);
 // on affiche museum et updated
 // vous devez voir museum sans total et updated avec un total
 // a faire pour lundi + palier 1 minimum et 2 fortement conseillé
+// const update = [...visits].reduce((sum, n) => sum + n, 0);
+// console.log(update);
+const update = {...museum, total:165484};
+console.log(museum, update);
