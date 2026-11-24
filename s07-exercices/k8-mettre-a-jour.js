@@ -5,5 +5,5 @@
 
 export function renameMuseum(museums, id, newName) {
   // TODO: replace the line below with your code.
-  return `À faire (${museums}, ${id}, ${newName})`;
+  return museums.map((museum) => (museum.id === id ? {...museum, name:newName} : museum));
 }
