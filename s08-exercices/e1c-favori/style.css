@@ -54,3 +54,8 @@ label {
 }
 
 /* Écrivez votre classe sous cette ligne. */
+.favori {
+  padding: 0.5rem;
+  background: #fef3c7;
+  border-left: 4px solid #b45309;
+}  

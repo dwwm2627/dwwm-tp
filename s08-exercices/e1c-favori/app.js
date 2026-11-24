@@ -10,3 +10,10 @@
 // Vérifiez dans le navigateur : avant le clic, rien ne change ; après le clic, la fiche a un fond
 // jaune clair et une barre orange, et le texte dit « Dans vos favoris. » ; au clavier aussi.
 
+const card = document.querySelector(`#fiche`);
+const state = document.querySelector(`#etat`);
+
+document.querySelector(`#ajouter`).addEventListener(`click`, ()=>{
+    card.classList.add(`favori`);
+    state.textContent = `Dans nos favoris`;
+})
