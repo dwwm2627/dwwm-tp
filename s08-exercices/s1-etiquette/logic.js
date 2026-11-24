@@ -5,5 +5,5 @@
 
 export function placeLabel(museum) {
   // TODO: replace the line below with your code.
-  return '';
+  return `${museum.Ville} (${museum.Departement})`;
 }

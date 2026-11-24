@@ -7,3 +7,14 @@ import { MUSEUMS } from '../data/musees-bretagne.js';
 import { placeLabel } from './logic.js';
 
 console.log('Données chargées :', MUSEUMS.length, 'musées', placeLabel);
+
+// affiche le nombre de musee
+document.querySelector(`#resume`).textContent = `${MUSEUMS.length} musees`;
+
+// afficher chaque musee dans une liste non ordonnee
+const list = document.querySelector(`#liste`);
+for(const museum of MUSEUMS){
+    const item = document.createElement(`li`);
+    item.textContent = placeLabel(museum);
+    list.append(item);
+}
