@@ -25,7 +25,13 @@ const summary = document.querySelector(`#resume`);
 // l'affichage ecrit le resultat dans le resume
 summary.textContent = `${morbihan.length} musees dans le Morbihan`;
 
-
+// afficher le nombre de musees du Finistere, en dessous de la ligne avec le nombre de musee dans le Morbihan, pour cela vous devez utiliser inDepartment
+// la logique calcule : les musees du Morbihan
+const finister = inDepartment(MUSEUMS, 'Finistère');
+// le resume de la page
+const summaryF = document.querySelector(`#resume2`);
+// l'affichage ecrit le resultat dans le resume
+summaryF.textContent = `${finister.length} musees dans le Finistère`;
 
 
 
