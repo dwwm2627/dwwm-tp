@@ -4,5 +4,5 @@
 
 export function withItem(list, item) {
   // TODO: replace the line below with your code.
-  return `À faire (${list}, ${item})`;
+  return [...list, item];
 }
