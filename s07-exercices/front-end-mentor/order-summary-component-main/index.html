@@ -2,36 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- La police Red Hat Display (style-guide.md) : graisses 500, 700 et 900 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <main>
+    <!-- Une carte = un contenu autonome : article -->
+    <article class="card">
+      <!-- Image décorative : alt vide, le lecteur d'écran l'ignore -->
+      <img class="card-hero" src="./images/illustration-hero.svg" alt="" width="450" height="220">
 
-  Order Summary
+      <div class="card-body">
+        <h1 class="card-title">Order Summary</h1>
+        <p class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <!-- Le forfait : icône, nom et prix, lien pour le changer -->
+        <div class="plan">
+          <img class="plan-icon" src="./images/icon-music.svg" alt="" width="48" height="48">
+          <p class="plan-info">
+            <strong class="plan-name">Annual Plan</strong>
+            <span class="plan-price">$59.99/year</span>
+          </p>
+          <a class="plan-change" href="#">Change</a>
+        </div>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+        <!-- Deux actions : des boutons, pas des titres ni des liens -->
+        <button class="btn-pay" type="button">Proceed to Payment</button>
+        <button class="btn-cancel" type="button">Cancel Order</button>
+      </div>
+    </article>
+  </main>
 </body>
 </html>

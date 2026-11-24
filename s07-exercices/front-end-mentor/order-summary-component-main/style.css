@@ -1,0 +1,181 @@
+/* 1 - La base  : initialisation minimale*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+input, button{
+    font :inherit;
+}
+
+/* 2 - les variables : couleurs du style-guide.md */
+:root{
+    --pale-blue : hsl(225, 100%, 94%);
+    --bright-blue : hsl(245, 75%, 52%);
+    --very-pale-blue : hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(225, 23%, 55%);
+    --dark-blue : hsl(223, 47%, 23%);
+    --white : hsl(0, 0%, 100%);
+    /* Couleur du survol, visible sur active-states,jpg */
+    --hover-blue : hsl(245, 82%, 68%);
+}
+
+/* 3-la page : fond bleu, vague en haut, carte au centre*/
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem; /*16px*/
+    font-weight: 500;
+    color:var(--desaturated-blue);
+    /* MOBILE d'abord : la petite vague */
+    background : var(--pale-blue) url("images/pattern-background-mobile.svg") no-repeat top center / 100% auto;
+}
+
+/* Ecran large : la grande */
+@media(min-width : 48rem){
+    body{
+        background-image : url("images/pattern-background-desktop.svg");
+    }
+}
+
+main{
+    /* Toute la hauteur de la fenetre, carte centree avec grid */
+    min-height : 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+}
+
+/* 4. la carte */
+.card{
+    width: 100%;
+    max-width: 450PX;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 25px 30px -10px hsla(245, 75%, 52%, 0.12);
+    text-align: center;
+}
+
+/* L'illustration reprend les coins arrondis du haut de la carte */
+.card-hero{
+    border-radius: 20px 20px 0 0;
+}
+
+.card-body{
+    padding:2.25rem 1.5rem 2rem;
+}
+
+.card-title{
+    margin : 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:var(--dark-blue);
+}
+
+.card-text{
+    margin: 0.75rem 0 1.5rem;
+}
+
+/* 5- le forfait : trois  elements sur une ligne avec flexbox*/
+.plan{
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+    padding: 1rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    text-align: left;
+}
+
+/* L'icone garde sa taille, meme si la place manque */
+.plan-icon{
+    flex-shrink: 0;
+}
+
+/* le bloc du milieu prend toute la place libre et pousse le lien a droite */
+.plan-info{
+    flex:1;
+    margin:0;
+}
+
+.plan-name{
+    display: block;
+    font-weight: 900;
+    color:var(--dark-blue);
+}
+
+.plan-change{
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--bright-blue);
+}
+
+.plan-change:hover,
+.plan-change:focus-visible{
+    color:var(--hover-blue);
+    text-decoration: none;
+}
+
+/* 6- Les deux boutons */
+.btn-pay,
+.btn-cancel{
+    display: block;
+    width: 100%;
+    border : none;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.btn-pay{
+    margin-top : 1.5rem;
+    padding:0.9rem;
+    border-radius: 12px;
+    background-color: var(--bright-blue);
+    color:var(--white);
+    box-shadow: 0 15px 25px -5px hsla(245, 75%, 52%, 0.35);
+}
+
+.btn-pay:hover,
+.btn-pay:focus-visible{
+    background-color: var(--hover-blue);
+}
+
+.btn-cancel{
+    margin-top: 1.25rem;
+    padding: 0.5rem;
+    background: none;
+    color: var(--desaturated-blue);
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus-visible{
+    color:var(--dark-blue)
+}
+
+/* Ecran large : un peu plus d'espace dans la carte */
+@media(min-width :48rem){
+    .card-body{
+        padding: 2.75rem 3rem 3rem;
+    }
+
+    .card-title{
+        font-size: 1.75rem;;
+    }
+
+    .plan{
+        padding:1.5rem;
+        gap:1.25rem;
+    }
+}
+
+
+
+
