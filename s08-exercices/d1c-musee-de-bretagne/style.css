@@ -54,3 +54,8 @@ label {
 }
 
 /* Écrivez votre classe sous cette ligne. */
+.encadre{
+  padding: 0.5rem;
+  border: 2px solid #1f5fbf;
+  border-radius: 6px;
+} 

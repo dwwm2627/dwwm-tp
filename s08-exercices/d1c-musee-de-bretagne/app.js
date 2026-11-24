@@ -15,3 +15,12 @@ const museum = {
   phone: '02 23 40 66 70',
 };
 console.log(museum);
+
+document.querySelector(`#titre`).textContent= museum.name;
+document.querySelector(`#ville`).textContent= museum.city;
+
+const phone = document.querySelector(`#telephone`);
+phone.textContent = `Telephone : ${museum.phone}`;
+phone.classList.add(`encadre`);
+
+document.querySelector(`#chargement`).hidden = true;
