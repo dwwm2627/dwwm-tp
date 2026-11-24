@@ -4,5 +4,5 @@
 
 export function withCity(person, city) {
   // TODO: replace the line below with your code.
-  return `À faire (${person}, ${city})`;
+  return { ...person, city };
 }
