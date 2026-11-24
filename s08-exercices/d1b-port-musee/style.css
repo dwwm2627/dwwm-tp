@@ -54,3 +54,7 @@ label {
 }
 
 /* Écrivez votre classe sous cette ligne. */
+.discret {
+  color: #5b616b;
+  font-size: 0.9rem;
+} 

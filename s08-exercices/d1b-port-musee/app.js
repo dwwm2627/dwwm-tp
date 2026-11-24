@@ -12,3 +12,10 @@ const museum = {
   department: 'Finistère',
 };
 console.log(museum);
+
+document.querySelector(`#titre`).textContent = museum.name;
+document.querySelector(`#ville`).textContent = museum.city;
+
+const departement = document.querySelector(`#departement`);
+departement.textContent = `Departement : ${museum.department}`;
+departement.classList.add(`discret`);
