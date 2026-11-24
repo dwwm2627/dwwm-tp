@@ -5,5 +5,5 @@
 
 export function postalLabel(museum) {
   // TODO: replace the line below with your code.
-  return '';
+  return `${museum.Code_postal} ${museum.Ville}`;
 }

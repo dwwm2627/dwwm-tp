@@ -11,3 +11,12 @@
 import { MUSEUMS } from '../data/musees-bretagne.js';
 import { postalLabel } from './logic.js';
 console.log('Données chargées :', MUSEUMS.length, 'musées', postalLabel);
+
+document.querySelector(`#resume`).textContent = `${MUSEUMS.length} musées`;
+
+const list = document.querySelector(`#liste`);
+for (const museum of MUSEUMS){
+    const item = document.createElement(`li`);
+    item.textContent = postalLabel(museum);
+    list.append(item);
+}

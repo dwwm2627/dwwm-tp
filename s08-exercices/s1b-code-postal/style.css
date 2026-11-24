@@ -54,3 +54,7 @@ label {
 }
 
 /* Écrivez votre classe sous cette ligne. */
+.resume{
+  font-weight: 700;
+  color : #1f5fbf;
+}
