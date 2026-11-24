@@ -9,3 +9,15 @@
 // Vérifiez dans le navigateur : 2 clics donnent la salle 3 ; le retour donne la salle 1 ;
 // au clavier aussi (Tab jusqu'au bouton, puis Entrée).
 
+const shown = document.querySelector(`#salle`);
+let room = 1;
+
+document.querySelector(`#suivante`).addEventListener(`click`, () =>{
+    room = room + 1; //room++
+    shown.textContent = room;
+})
+
+document.querySelector(`#retour`).addEventListener(`click`,()=>{
+    room = 1;
+    shown.textContent = room;
+})
