@@ -11,3 +11,7 @@ const museum = {
   department: 'Finistère',
 };
 console.log(museum);
+
+document.querySelector('#titre').textContent = museum.name;
+document.querySelector('#ville').textContent = museum.city;
+document.querySelector('#departement').textContent = `Departement : ${museum.department}`;
