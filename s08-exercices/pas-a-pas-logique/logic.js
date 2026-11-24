@@ -2,9 +2,11 @@
 // Les deux fonctions sont déjà déclarées : vous écrivez leur contenu, étape par étape.
 
 export function museumLabel(museum) {
-  return '';
+  // le nom, un tiret, la ville : un texte sans document
+  return `${museum.Nom_officiel} - ${museum.Ville}`;
 }
 
 export function inDepartment(museums, department) {
-  return [];
+  // filter : garde les musees de ce departement
+  return museums.filter((item)=>item.Departement === department);
 }
