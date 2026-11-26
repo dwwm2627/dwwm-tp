@@ -26,3 +26,12 @@ console.log(Ville, Departement);
 const {Nom_officiel : name} = museum;
 // name vaut "musée de la pêche"
 console.log(name);
+
+// ETAPE 3 - DANS LES PARANETRES
+// Dans les parametres : la fonction recoit musee
+function label({Nom_officiel:title, Ville:city}){
+  // title et city viennet du musee recu
+  return `${title} - ${city}`;
+}
+// Le meme appel qu'avant : on donne un musee en entier
+console.log(label(other));
