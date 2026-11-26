@@ -20,3 +20,9 @@ console.log(museum.Nom_officiel, '/', other.Nom_officiel);
 const {Ville, Departement} = museum;
 // Ville et Departement existent maintenant
 console.log(Ville, Departement);
+
+// ETAPE 2 - RENOMMER
+// RENOMNER : LA CLE Nom_officiel devient la variable name
+const {Nom_officiel : name} = museum;
+// name vaut "musée de la pêche"
+console.log(name);
