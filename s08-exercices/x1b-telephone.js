@@ -6,5 +6,6 @@
 
 export function phoneLine(museum) {
   // TODO: replace the line below with your code.
-  return '';
+  const {Nom_officiel, Telephone} = museum;
+  return `${Nom_officiel} : ${Telephone}`;
 }
