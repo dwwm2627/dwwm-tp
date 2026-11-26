@@ -7,5 +7,12 @@
 
 export function checkFirstName(text) {
   // TODO: replace the line below with your code.
-  return 'À faire';
-}
+  const firstName = text.trim();
+  if (firstName === '') {
+    return 'Veuillez écrire votre prénom.';
+  }
+  if (firstName.length > 20) {
+    return 'Le prénom compte 20 caractères au plus.';
+  }
+  return '';
+};

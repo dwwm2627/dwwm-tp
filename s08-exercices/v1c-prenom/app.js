@@ -14,3 +14,19 @@
 // « Merci, Lou ! » est vert et en gras.
 import { checkFirstName } from './logic.js';
 console.log(checkFirstName);
+
+const form = document.querySelector('#livre');
+const field = document.querySelector('#prenom');
+const error = document.querySelector('#erreur');
+const thanks = document.querySelector('#merci');
+
+form.addEventListener(`submit`, (event)=>{
+    event.preventDefault();
+    const message = checkFirstName(field.value);
+    error.textContent = message;
+    if (message ===``){
+        thanks.textContent = `Merci, ${field.value.trim()} !`;
+    }else{
+        thanks.textContent = ``;
+    }
+});
