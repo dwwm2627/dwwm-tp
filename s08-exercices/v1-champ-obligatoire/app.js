@@ -11,3 +11,11 @@ const field = document.querySelector('#requete');
 const error = document.querySelector('#erreur');
 const result = document.querySelector('#resultat');
 console.log(form, field, error, result, checkQuery);
+
+
+form.addEventListener(`submit`, (event)=>{
+    event.preventDefault();
+    const message = checkQuery(field.value);
+    error.textContent = message;
+    result.textContent = message === `` ? `Recherche : ${field.value.trim()}` : ``;
+})

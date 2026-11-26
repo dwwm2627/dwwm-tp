@@ -7,5 +7,15 @@
 
 export function checkQuery(text) {
   // TODO: replace the line below with your code.
-  return 'À faire';
+  const query = text.trim();
+  if(query === ""){
+    return "Veuillez écrire un nom ou une ville."
+  }
+  if(query.length === 1){
+    return `Veuillez écrire au moins 2 caractères.`
+  }
+  return ``;
 }
+
+// '' ou "" ou `` si tu as que du texte c'est pareil
+// `` obligatoire pour utiliser ${} dans ton texte 
