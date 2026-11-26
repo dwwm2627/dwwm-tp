@@ -11,3 +11,20 @@
 // le message d'erreur est rouge et en gras.
 import { checkPostcode } from './logic.js';
 console.log(checkPostcode);
+
+const form = document.querySelector(`#recherche`);
+const field = document.querySelector(`#code`);
+const error = document.querySelector(`#erreur`);
+const result = document.querySelector(`#resultat`);
+
+
+form.addEventListener(`submit`, (event)=>{
+    event.preventDefault();
+    const message = checkPostcode(field.value);
+    error.textContent = message;
+    if (message ===``){
+        result.textContent = `Code Postal : ${field.value.trim()}`;
+    }else{
+        result.textContent=``;
+    }
+});

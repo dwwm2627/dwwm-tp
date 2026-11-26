@@ -7,5 +7,12 @@
 
 export function checkPostcode(text) {
   // TODO: replace the line below with your code.
-  return 'À faire';
+  const postcode = text.trim();
+  if (postcode === ``){
+    return `Veuillez ecrire un code postal.`;
+  }
+  if (postcode.length !== 5){
+    return `Le code postal compte 5 caracteres.`
+  }
+  return ``;
 }
