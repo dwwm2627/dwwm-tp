@@ -39,6 +39,10 @@ form.addEventListener(`submit`, (event)=>{
         error.textContent = `Veuillez écrire le nom d'une ville.`;
         // On efface un ancien résultat
         result.textContent = ``;
+    }else if (city.length === 1){
+        error.textContent = `Veuillez écrire au moins 2 caractères`;
+        // On efface un ancien résultat
+        result.textContent = ``;
     }else{
         // Champe rempli : plus de message d'erreur
         error.textContent =``;
@@ -53,3 +57,5 @@ field.addEventListener(`input`, ()=>{
     //on efface l'erreur dès qu'on retape
     error.textContent=``;
 })
+
+//ETAPE 5 - Dans l'écouteur de l'étape 3, ajoutez un cas : une ville d'une seule lettre affiche le message "Veuillez écrire au moins 2 caractères", pour cela vous devez utiliser (city.length === 1)
