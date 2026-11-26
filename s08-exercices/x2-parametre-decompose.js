@@ -4,7 +4,7 @@
 // Nom_officiel devient name, Ville devient city. Le corps n'a qu'une ligne : return.
 // Lancez les tests : node --test x2-parametre-decompose.test.js
 
-export function shortCard(museum) {
+export function shortCard({Nom_officiel : name, Ville:city}) {
   // TODO: replace the line below with your code.
-  return '';
+  return `${name} (${city})`;
 }
