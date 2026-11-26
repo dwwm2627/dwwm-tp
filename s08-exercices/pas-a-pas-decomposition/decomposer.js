@@ -35,3 +35,10 @@ function label({Nom_officiel:title, Ville:city}){
 }
 // Le meme appel qu'avant : on donne un musee en entier
 console.log(label(other));
+
+// ETAPE 4 - Dans un Callback
+// Dans un callback : chaque musee est decompose
+const cities = [museum,other].map(({Ville: city})=> city);
+// Un tableau des villes
+console.log(cities);
+
