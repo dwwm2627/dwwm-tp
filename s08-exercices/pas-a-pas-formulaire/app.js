@@ -14,3 +14,35 @@ form.addEventListener('submit', (event)=> {
     // pour voir que l'écouteur s'exécute
     console.log(`envoyé!`)
 })
+
+// ETAPE 2 - LIRE UN CHAMPS
+// Deuxieme ecouteur submit : lire le champ
+form.addEventListener('submit', (event)=> {
+// preventDefault : la page ne se recharge pas
+    event.preventDefault();
+    //value : le texte du champ, trim : sans espace autour
+    const city = field.value.trim();
+    // le resultat, ecrit dans la page
+    result.textContent = `Recherche : ${city}`;
+})
+
+//ETAPE 3 -  VERIFIER
+// Remplace l'ecouteur de l'étape 2 : lire, puis verifier
+form.addEventListener(`submit`, (event)=>{
+// preventDefault : la page ne se recharge pas
+    event.preventDefault();
+    //value : le texte du champ, trim : sans espace autour
+    const city = field.value.trim();
+    // champ vide : un message d'erreur, et aucun resultat
+    if(city === ``){
+        //le message, visible sous le champ
+        error.textContent = `Veuillez écrire le nom d'une ville.`;
+        // On efface un ancien résultat
+        result.textContent = ``;
+    }else{
+        // Champe rempli : plus de message d'erreur
+        error.textContent =``;
+        //le resultat, ecrit dans la page
+        result.textContent = `Recherche : ${city}`;
+    }
+})
