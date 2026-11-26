@@ -6,5 +6,6 @@
 
 export function cardTitle(museum) {
   // TODO: replace the line below with your code.
-  return '';
+  const {Nom_officiel, Ville} = museum
+  return `${Nom_officiel}, à ${Ville}`;
 }

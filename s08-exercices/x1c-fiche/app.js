@@ -14,4 +14,9 @@ import { cardTitle } from './logic.js';
 
 // The fourth museum of the file: musée de la pêche, Concarneau.
 const museum = MUSEUMS[3];
-console.log(museum, cardTitle);
+document.querySelector(`#titre`).textContent = cardTitle(museum);
+
+const {Code_postal, Departement}= museum;
+const place = document.querySelector(`#lieu`);
+place.textContent=`${Code_postal}, ${Departement}`;
+place.classList.add(`discret`);
