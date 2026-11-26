@@ -46,3 +46,10 @@ form.addEventListener(`submit`, (event)=>{
         result.textContent = `Recherche : ${city}`;
     }
 })
+
+// ETAPE 4 - EFFACER EN RETAPANT
+// VIDE LE MESSAGE PENDANT LA SAISIE
+field.addEventListener(`input`, ()=>{
+    //on efface l'erreur dès qu'on retape
+    error.textContent=``;
+})
