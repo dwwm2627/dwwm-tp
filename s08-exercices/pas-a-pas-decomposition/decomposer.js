@@ -42,3 +42,11 @@ const cities = [museum,other].map(({Ville: city})=> city);
 // Un tableau des villes
 console.log(cities);
 
+// ETAPE 5 : ecrire une fonction departement({Departement}) qui renvoie Departement, avec ses commentaires et appelez sur l'objet other -  reussi si vous afficher Finistere
+function departement({Departement}){
+  // departement vient du musee recu
+  return `${Departement}`;
+}
+// Le meme appel qu'avant : on donne un musee en entier
+console.log(departement(other));
+
