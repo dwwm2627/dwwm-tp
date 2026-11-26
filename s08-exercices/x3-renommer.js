@@ -6,5 +6,6 @@
 
 export function toCard(museum) {
   // TODO: replace the line below with your code.
-  return {};
+  const {Nom_officiel : name, Ville : city, Departement : department} = museum;
+  return {name, city, department};
 }
