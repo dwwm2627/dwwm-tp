@@ -6,5 +6,6 @@
 
 export function placeLine(museum) {
   // TODO: replace the line below with your code.
-  return '';
+  const {Ville, Departement} = museum;
+  return `${Ville}, ${Departement}`;
 }
