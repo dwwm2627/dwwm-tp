@@ -14,3 +14,9 @@ const other = {
   Departement: 'Finistère',
 };
 console.log(museum.Nom_officiel, '/', other.Nom_officiel);
+
+// ETAPE 1 - DEUX VARIABLES EN UNE LIGNE
+// DECOMPOSITION : DEUX VARIABLES EN UNE LIGNE
+const {Ville, Departement} = museum;
+// Ville et Departement existent maintenant
+console.log(Ville, Departement);
